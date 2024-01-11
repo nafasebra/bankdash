@@ -12,11 +12,13 @@ function Body(props: BodyProps) {
 
   return (
     <>
-      <Sidebar />
-      <main>
-        {children}
-      </main>
-      <Navbar pageName={pageName} />
+      <section className='min-h-screen w-full flex'>
+        <Sidebar />
+        <main className='w-[calc(100%-300px)]'>
+          <Navbar pageName={pageName} />
+          {children}
+        </main>
+      </section>
     </>
   )
 }

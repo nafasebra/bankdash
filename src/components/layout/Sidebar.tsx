@@ -64,16 +64,18 @@ export const menuLinks: menuLinkType[] = [
 
 function Sidebar() {
   return (
-    <div className="bg-white flex flex-col gap-16 py-10 px-6 w-[300px]">
-      <img src="/logo.png" className="w-full" />
+    <div className="bg-white flex flex-col gap-14 py-6 w-[300px]">
+      <div className="px-6">
+        <img src="/logo.png" className="w-[150px]" />
+      </div>
       <ul className="flex flex-col gap-2">
         {menuLinks.map((menu) => (
           <li key={menu.id}>
             <Link
               to={menu.link}
-              className="flex items-center gap-6 py-2 relative px-4"
+              className="flex items-center gap-6 py-2 px-6 relative"
             >
-              <div className="w-7 h-7 flex items-center">{menu.icon}</div>
+              <div className="w-5 h-5 flex items-center">{menu.icon}</div>
               <p>{menu.title}</p>
             </Link>
           </li>
