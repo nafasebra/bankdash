@@ -8,16 +8,10 @@ import {
   ServicesIcon,
   SettingsIcon,
   TransactionIcon,
-} from "../../assets/icons";
+} from "@/assets/icons";
+import { menuLinkType } from "@/types/link";
 
-type menuLinkType = {
-  id: number;
-  title: string;
-  link: string;
-  icon: React.ReactNode;
-};
-
-const menuLinks: menuLinkType[] = [
+export const menuLinks: menuLinkType[] = [
   {
     id: 1,
     title: "Dashboard",
