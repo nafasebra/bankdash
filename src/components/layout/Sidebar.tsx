@@ -10,53 +10,55 @@ import {
   TransactionIcon,
 } from "@/assets/icons";
 import { menuLinkType } from "@/types/link";
+import { linkEnum } from "@/enums/link";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const menuLinks: menuLinkType[] = [
   {
     id: 1,
-    title: "Dashboard",
+    title: linkEnum.Dashboard,
     link: "/",
     icon: <HomeIcon />,
   },
   {
     id: 2,
-    title: "Transactions",
+    title: linkEnum.Transactions,
     link: "/transactions",
     icon: <TransactionIcon />,
   },
   {
     id: 3,
-    title: "Accounts",
+    title: linkEnum.Accounts,
     link: "/accounts",
     icon: <AccountIcon />,
   },
   {
     id: 4,
-    title: "Investments",
+    title: linkEnum.Investments,
     link: "/investments",
     icon: <InvestmentsIcon />,
   },
   {
     id: 5,
-    title: "Credit Cards",
+    title: linkEnum.Credit,
     link: "/cards",
     icon: <CreditcardIcon />,
   },
   {
     id: 6,
-    title: "Loans",
+    title: linkEnum.Loans,
     link: "/loans",
     icon: <LoansIcon />,
   },
   {
     id: 7,
-    title: "Services",
+    title: linkEnum.Services,
     link: "/services",
     icon: <ServicesIcon />,
   },
   {
     id: 8,
-    title: "Setting",
+    title: linkEnum.Setting,
     link: "/setting",
     icon: <SettingsIcon />,
   },
