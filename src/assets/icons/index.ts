@@ -6,3 +6,6 @@ export { default as LoansIcon } from "./Loans";
 export { default as ServicesIcon } from "./Services";
 export { default as TransactionIcon } from "./Transaction";
 export { default as SettingsIcon } from "./Settings";
+export { default as SearchIcon } from "./Search";
+export { default as BellIcon } from "./Bell";
+export { default as SettingsOIcon } from "./SettingOutline";
