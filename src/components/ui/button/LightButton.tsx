@@ -10,7 +10,7 @@ function LightButton(props: LightButtonProps) {
 
   return (
     <button
-      className={`bg-light rounded-full min-w-[52px] h-[52px] flex items-center justify-center gap-3 ${className}`}
+      className={`bg-light rounded-full min-w-[50px] h-[50px] flex items-center justify-center gap-3 ${className}`}
       {...rest}
     >
       {children}

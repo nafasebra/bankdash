@@ -8,4 +8,4 @@ export { default as TransactionIcon } from "./Transaction";
 export { default as SettingsIcon } from "./Settings";
 export { default as SearchIcon } from "./Search";
 export { default as BellIcon } from "./Bell";
-export { default as SettingsOIcon } from "./SettingOutline";
+export { default as SettingOIcon } from "./SettingOutline";
