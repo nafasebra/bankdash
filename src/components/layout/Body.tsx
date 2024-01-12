@@ -1,9 +1,10 @@
 import React from 'react'
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
+import { linkEnum } from '@/enums/link';
 
 interface BodyProps {
-  pageName: string;
+  pageName: linkEnum;
   children: React.ReactNode[] | React.ReactNode;
 }
 
@@ -13,7 +14,7 @@ function Body(props: BodyProps) {
   return (
     <>
       <section className='min-h-screen w-full flex'>
-        <Sidebar />
+        <Sidebar active={pageName} />
         <main className='w-[calc(100%-300px)]'>
           <Navbar pageName={pageName} />
           {children}

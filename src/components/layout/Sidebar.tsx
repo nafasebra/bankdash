@@ -64,7 +64,16 @@ export const menuLinks: menuLinkType[] = [
   },
 ];
 
-function Sidebar() {
+interface SidebarProps {
+  active: linkEnum;
+}
+
+function Sidebar(props: SidebarProps) {
+  const { active } = props;
+
+  console.log(active);
+  
+
   return (
     <div className="bg-white flex flex-col gap-14 py-6 w-[300px]">
       <div className="px-6">
@@ -75,7 +84,7 @@ function Sidebar() {
           <li key={menu.id}>
             <Link
               to={menu.link}
-              className="flex items-center gap-6 py-2 px-6 relative"
+              className={`flex items-center gap-6 py-2 px-6 relative ${menu.title === active ? "text-primary-100" : "text-primary-200"} hover:text-primary-100 transition-all`}
             >
               <div className="w-5 h-5 flex items-center">{menu.icon}</div>
               <p>{menu.title}</p>
