@@ -15,9 +15,9 @@ function Navbar(props: NavbarProps) {
   }
 
   return (
-    <nav className="bg-white flex items-center justify-between gap-10 px-8 py-6">
+    <nav className="bg-white flex items-center justify-between gap-10 px-8 py-4">
       <p className="text-xl font-bold text-primary-200">{pageName}</p>
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-4">
         <SearchInput handleSubmit={handleSubmit} />
         {/* setting button */}
         <LightButton className="text-dark-blue">

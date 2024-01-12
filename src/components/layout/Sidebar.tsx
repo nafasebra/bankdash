@@ -72,7 +72,7 @@ function Sidebar(props: SidebarProps) {
   const { active } = props;
 
   return (
-    <div className="bg-white flex flex-col gap-10 py-6 w-[300px] border-r border-light">
+    <div className="bg-white flex flex-col gap-10 py-7 w-[300px] border-r border-light">
       <div className="px-6">
         <img src="/logo.png" className="w-[150px]" />
       </div>
