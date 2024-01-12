@@ -71,20 +71,18 @@ interface SidebarProps {
 function Sidebar(props: SidebarProps) {
   const { active } = props;
 
-  console.log(active);
-  
-
   return (
-    <div className="bg-white flex flex-col gap-14 py-6 w-[300px]">
+    <div className="bg-white flex flex-col gap-14 py-6 w-[300px] border-r border-light">
       <div className="px-6">
         <img src="/logo.png" className="w-[150px]" />
       </div>
       <ul className="flex flex-col gap-2">
         {menuLinks.map((menu) => (
-          <li key={menu.id}>
+          <li key={menu.id} className="relative">
+            <div className={`${menu.title === active ? "block" : "hidden"} absolute bg-primary-100 top-0 bottom-0 left-0 w-2 rounded-r-2xl h-full`}></div>
             <Link
               to={menu.link}
-              className={`flex items-center gap-6 py-2 px-6 relative ${menu.title === active ? "text-primary-100" : "text-primary-200"} hover:text-primary-100 transition-all`}
+              className={`flex items-center gap-6 py-3 px-6 relative ${menu.title === active ? "text-primary-100" : "text-primary-200"} hover:text-primary-100 transition-all`}
             >
               <div className="w-5 h-5 flex items-center">{menu.icon}</div>
               <p>{menu.title}</p>
