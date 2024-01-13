@@ -17,7 +17,9 @@ function Body(props: BodyProps) {
         <Sidebar active={pageName} />
         <main className='w-[calc(100%-300px)]'>
           <Navbar pageName={pageName} />
-          {children}
+          <section className='p-7'>
+            {children}
+          </section>
         </main>
       </section>
     </>

@@ -14,6 +14,7 @@ export default {
         yellow: '#FEAA09',
         light: '#F5F7FA',
         magenta: '#FE5C73',
+        cyan: '#16DBCC',
         'dark-blue': '#718EBF',
       },
     },

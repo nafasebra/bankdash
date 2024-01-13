@@ -9,3 +9,6 @@ export { default as SettingsIcon } from "./Settings";
 export { default as SearchIcon } from "./Search";
 export { default as BellIcon } from "./Bell";
 export { default as SettingOIcon } from "./SettingOutline";
+export { default as PaypalIcon } from "./Paypal";
+export { default as CoinIcon } from "./Coin";
+export { default as CardIcon } from "./Card";
