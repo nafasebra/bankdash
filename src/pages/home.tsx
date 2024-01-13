@@ -1,7 +1,5 @@
 import { linkEnum } from '@/enums/link'
 import Body from '../components/layout/Body'
-import BankLogoBlack from '@/assets/images/bank-logo-black.svg'
-import ChipCardBlack from '@/assets/images/Chip_Card-black.png'
 import { CardIcon, CoinIcon, PaypalIcon } from '@/assets/icons'
 import CreditCard from '@/components/ui/card/CreditCard'
 
@@ -14,32 +12,8 @@ function Home() {
             <p className='flex items-center text-2xl font-semibold text-primary-200'>Home</p>
             <p className='flex items-center justify-end text-lg text-primary-200'>See All</p>
           </div>
-          <CreditCard />
-          <div className='bg-white rounded-xl overflow-hidden text-primary-200'>
-            <div className='px-6 py-5 space-y-6'>
-              <div className='flex items-center justify-between'>
-                <div>
-                  <p className='text-sm'>Balance</p>
-                  <p className='text-2xl'>$5,756</p>
-                </div>
-                <img src={ChipCardBlack} className='w-[35px]' />
-              </div>
-              <div className='grid grid-cols-2 gap-5'>
-                <div className='space-y-1'>
-                  <p className='text-sm text-white/80'>CARD HOLDER</p>
-                  <p className='text-xl'>Eddy Cusuma</p>
-                </div>
-                <div className='space-y-1'>
-                  <p className='text-sm text-white/80'>VALID THRU</p>
-                  <p className='text-xl'>12/22</p>
-                </div>
-              </div>
-            </div>
-            <div className='border-t border-gray-200 flex items-center justify-between px-6 py-4'>
-              <p className='font-bold text-xl'>3778 **** **** 1234</p>
-              <img src={BankLogoBlack} className='w-[50px]' />
-            </div>
-          </div>
+          <CreditCard theme='blue' />
+          <CreditCard theme='white' />
         </div>
         <div className='flex flex-col gap-5'>
           <p className='flex items-center text-2xl font-semibold text-primary-200'>Recent Transaction</p>

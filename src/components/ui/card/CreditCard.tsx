@@ -1,16 +1,41 @@
 import BankLogo from "@/assets/images/bank-logo.svg";
 import ChipCard from "@/assets/images/Chip_Card.png";
+import BankLogoBlack from "@/assets/images/bank-logo-black.svg";
+import ChipCardBlack from "@/assets/images/Chip_Card-black.png";
 
-function CreditCard() {
+interface CreditCardProps {
+  theme?: "blue" | "ocean" | "white";
+}
+
+function CreditCard(props: CreditCardProps) {
+  const { theme = "blue" } = props;
+
+  const renderTheme = () => {
+    switch (theme) {
+      case "blue":
+        return "bg-primary-100 text-white";
+      case "ocean":
+        return "bg-gradient-to-tr from-primary-100 to-primary-300 text-white";
+      case "white":
+        return "bg-white text-primary-200";
+      default:
+        return "";
+    }
+  };
+
   return (
-    <div className="bg-primary-100 rounded-xl overflow-hidden text-white">
+    <div className={`${renderTheme()} rounded-xl overflow-hidden`}>
       <div className="px-6 py-5 space-y-6">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-sm">Balance</p>
             <p className="text-2xl">$5,756</p>
           </div>
-          <img src={ChipCard} className="w-[35px]" />
+          {theme === "white" ? (
+            <img src={ChipCardBlack} className="w-[35px]" />
+          ) : (
+            <img src={ChipCard} className="w-[35px]" />
+          )}
         </div>
         <div className="grid grid-cols-2 gap-5">
           <div className="space-y-1">
@@ -25,7 +50,11 @@ function CreditCard() {
       </div>
       <div className="bg-gradient-to-br from-white/15 to-transparent flex items-center justify-between px-6 py-4">
         <p className="font-bold text-xl">3778 **** **** 1234</p>
-        <img src={BankLogo} className="w-[50px]" />
+        {theme === "white" ? (
+          <img src={BankLogoBlack} className="w-[50px]" />
+        ) : (
+          <img src={BankLogo} className="w-[50px]" />
+        )}
       </div>
     </div>
   );

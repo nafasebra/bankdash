@@ -10,6 +10,7 @@ export default {
         primary: {
           100: '#2D60FF',
           200: '#343C6A',
+          300: '#539BFF',
         },
         yellow: '#FEAA09',
         light: '#F5F7FA',
