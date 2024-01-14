@@ -2,6 +2,7 @@ import { linkEnum } from '@/enums/link'
 import Body from '../components/layout/Body'
 import { CardIcon, CoinIcon, PaypalIcon } from '@/assets/icons'
 import CreditCard from '@/components/ui/card/CreditCard'
+import LineChart from '@/components/ui/chart/LineChart'
 
 function Home() {
   return (
@@ -61,7 +62,7 @@ function Home() {
         <div className='col-span-1 lg:col-span-2 space-y-4'>
           <p className='text-primary-200 text-xl'>Weekly Activity</p>
           <div className='bg-white rounded-xl overflow-hidden p-5'>
-            {/* chart */}
+            <LineChart />
           </div>
         </div>
         <div className='space-y-4'>
