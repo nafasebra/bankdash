@@ -57,6 +57,34 @@ function Home() {
           </ul>
         </div>
       </div>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
+        <div className='col-span-1 lg:col-span-2 space-y-4'>
+          <p className='text-primary-200 text-xl'>Weekly Activity</p>
+          <div className='bg-white rounded-xl overflow-hidden p-5'>
+            {/* chart */}
+          </div>
+        </div>
+        <div className='space-y-4'>
+          <p className='text-primary-200 text-xl'>Expense Statistics</p>
+          <div className='bg-white rounded-xl overflow-hidden p-5'>
+            {/* chart */}
+          </div>
+        </div>
+      </div>
+      <div className="flex gap-5">
+        <div className='w-[35%] basis-[35%] space-y-4'>
+          <p className='text-primary-200 text-xl'>Quick Transfer</p>
+          <div className='bg-white rounded-xl overflow-hidden p-5'>
+            {/* add slider */}
+          </div>
+        </div>
+        <div className='w-[65%] basis-[65%] space-y-4'>
+          <p className='text-primary-200 text-xl'>Balance History</p>
+          <div className='bg-white rounded-xl overflow-hidden p-5'>
+            {/* chart */}
+          </div>
+        </div>
+      </div>
     </Body>
   )
 }
