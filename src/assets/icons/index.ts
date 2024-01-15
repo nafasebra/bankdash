@@ -12,3 +12,5 @@ export { default as SettingOIcon } from "./SettingOutline";
 export { default as PaypalIcon } from "./Paypal";
 export { default as CoinIcon } from "./Coin";
 export { default as CardIcon } from "./Card";
+export { default as ArrowUpIcon } from "./ArrowUp";
+export { default as ArrowDownIcon } from "./ArrowDown";
