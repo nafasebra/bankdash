@@ -23,6 +23,7 @@ export const options = {
   responsive: true,
   plugins: {
     legend: {
+      display: false,
       position: 'top' as const,
     },
     title: {
@@ -38,19 +39,27 @@ export const data = {
   datasets: [
     {
       label: 'Dataset 1',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      data: labels.map(() => faker.datatype.number({ min: 200, max: 500 })),
+      backgroundColor: 'rgba(45, 96, 255, 1)',
+      borderWidth: 2,
+      borderRadius: 30,
+      barPercentage: 0.45,
+      categoryPercentage: 1
     },
     {
       label: 'Dataset 2',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      data: labels.map(() => faker.datatype.number({ min: 200, max: 500 })),
+      backgroundColor: 'rgba(22, 219, 204, 1)',
+      borderWidth: 2,
+      borderRadius: 30,
+      barPercentage: 0.45,
+      categoryPercentage: 1
     },
   ],
 };
 
 function BarChart() {
-  return <Bar options={options} data={data} />;
+  return <Bar height={150} options={options} data={data} />;
 }
 
 export default BarChart;

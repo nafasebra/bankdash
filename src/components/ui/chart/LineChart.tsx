@@ -61,7 +61,7 @@ export const data = {
   datasets: [
     {
       label: 'Dataset 1',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+      data: labels.map(() => faker.datatype.number({ min: 200, max: 500 })),
       borderColor: 'rgb(45, 96, 255)',
       backgroundColor: 'rgba(45, 96, 255, 0.1)',
       lineTension: 0.4,
@@ -71,7 +71,7 @@ export const data = {
 };
 
 function LineChart() {
-  return <Line options={options} data={data} />;
+  return <Line height={120} options={options} data={data} />;
 }
 
 export default LineChart
