@@ -26,8 +26,7 @@ export const options = {
       position: 'top' as const,
     },
     title: {
-      display: true,
-      text: 'Chart.js Bar Chart',
+      display: false,
     },
   },
 };
