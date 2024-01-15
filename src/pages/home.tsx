@@ -3,6 +3,8 @@ import Body from '../components/layout/Body'
 import { CardIcon, CoinIcon, PaypalIcon } from '@/assets/icons'
 import CreditCard from '@/components/ui/card/CreditCard'
 import LineChart from '@/components/ui/chart/LineChart'
+import PieChart from '@/components/ui/chart/PieChart'
+import BarChart from '@/components/ui/chart/BarChart'
 
 function Home() {
   return (
@@ -62,13 +64,13 @@ function Home() {
         <div className='col-span-1 lg:col-span-2 space-y-4'>
           <p className='text-primary-200 text-xl'>Weekly Activity</p>
           <div className='bg-white rounded-xl overflow-hidden p-5'>
-            <LineChart />
+            <BarChart />
           </div>
         </div>
         <div className='space-y-4'>
           <p className='text-primary-200 text-xl'>Expense Statistics</p>
           <div className='bg-white rounded-xl overflow-hidden p-5'>
-            {/* chart */}
+            <PieChart />
           </div>
         </div>
       </div>
@@ -82,7 +84,7 @@ function Home() {
         <div className='w-[65%] basis-[65%] space-y-4'>
           <p className='text-primary-200 text-xl'>Balance History</p>
           <div className='bg-white rounded-xl overflow-hidden p-5'>
-            {/* chart */}
+            <LineChart />
           </div>
         </div>
       </div>
