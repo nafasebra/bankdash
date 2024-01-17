@@ -1,4 +1,7 @@
-import { ArrowUpIcon, ArrowDownIcon } from "@/assets/icons"
+import { 
+  ArrowUpIcon, 
+  ArrowDownIcon 
+} from "@/assets/icons"
 
 function Table() {
   return (
@@ -7,36 +10,42 @@ function Table() {
         <div className="inline-block min-w-full overflow-hidden" >
           <table className="min-w-full leading-normal">
             <thead>
-              <tr>
+              <tr className="border-b-2 border-gray-200">
                 <th
-                  className="px-5 py-3 border-b-2 border-gray-200 text-left  font-semibold text-dark-blue"
+                  className="px-5 py-3 whitespace-nowrap text-left font-semibold text-dark-blue"
                 >
-                  Client / Invoice
+                  Description
                 </th>
                 <th
-                  className="px-5 py-3 border-b-2 border-gray-200 text-left  font-semibold text-dark-blue text-lg"
+                  className="px-5 py-3 whitespace-nowrap text-left font-semibold text-dark-blue text-lg"
                 >
+                  Transaction ID
+                </th>
+                <th
+                  className="px-5 py-3 whitespace-nowrap text-left font-semibold text-dark-blue text-lg"
+                >
+                  Type
+                </th>
+                <th
+                  className="px-5 py-3 whitespace-nowrap text-left font-semibold text-dark-blue text-lg"
+                >
+                  Card
+                </th>
+                <th className="px-5 py-3 whitespace-nowrap text-left font-semibold text-dark-blue text-lg">
+                  Date
+                </th>
+                <th className="px-5 py-3 whitespace-nowrap font-semibold text-dark-blue text-lg text-center">
                   Amount
                 </th>
-                <th
-                  className="px-5 py-3 border-b-2 border-gray-200 text-left  font-semibold text-dark-blue text-lg"
-                >
-                  Issued / Due
+                <th className="px-5 py-3 whitespace-nowrap text-left font-semibold text-dark-blue text-lg">
+                  Receipt
                 </th>
-                <th
-                  className="px-5 py-3 border-b-2 border-gray-200 text-left  font-semibold text-dark-blue text-lg"
-                >
-                  Status
-                </th>
-                <th
-                  className="px-5 py-3 border-b-2 border-gray-200"
-                ></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="divide-y divide-gray-200">
               <tr>
-                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <div className="flex items-center gap-3">
+                <td className="px-5 py-5 bg-white">
+                  <div className="flex items-center gap-2">
                     <div className="flex items-center flex-shrink-0 text-dark-blue w-10 h-10">
                       <ArrowUpIcon />
                     </div>
@@ -45,39 +54,53 @@ function Table() {
                     </p>
                   </div>
                 </td>
-                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <p className="text-gray-900 whitespace-no-wrap">$20,000</p>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">#12548796</p>
                 </td>
-                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <p className="text-gray-900 whitespace-no-wrap">Sept 28, 2019</p>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">Shopping</p>
                 </td>
-                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <span
-                    className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight"
-                  >
-                    <span
-                      aria-hidden
-                      className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                    ></span>
-                    <span className="relative">Paid</span>
-                  </span>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">1234 ****</p>
                 </td>
-                <td
-                  className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-right"
-                >
-                  <button
-                    type="button"
-                    className="inline-block text-dark-blue text-lg hover:text-gray-700"
-                  >
-                    <svg
-                      className="inline-block h-6 w-6 fill-current"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 6a2 2 0 110-4 2 2 0 010 4zm0 8a2 2 0 110-4 2 2 0 010 4zm-2 6a2 2 0 104 0 2 2 0 00-4 0z"
-                      />
-                    </svg>
-                  </button>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">28 Jan, 12.30 AM</p>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm text-center">
+                  <p className="text-magenta whitespace-nowrap">-$2,500</p>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm text-right">
+                  <a href="#" className="mx-auto flex items-center justify-center py-2 px-4 rounded-full border-2 border-dark-blue text-dark-blue text-center">Download</a>
+                </td>
+              </tr>
+              <tr>
+                <td className="px-5 py-5 bg-white">
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center flex-shrink-0 text-dark-blue w-10 h-10">
+                      <ArrowDownIcon />
+                    </div>
+                    <p className="text-primary-200">
+                      Molly Sanders
+                    </p>
+                  </div>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">#12548796</p>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">Shopping</p>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">1234 ****</p>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-nowrap">28 Jan, 12.30 AM</p>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm text-center">
+                  <p className="text-magenta whitespace-nowrap">-$2,500</p>
+                </td>
+                <td className="px-5 py-5 bg-white text-sm text-right">
+                  <a href="#" className="mx-auto flex items-center justify-center py-2 px-4 rounded-full border-2 border-dark-blue text-dark-blue text-center">Download</a>
                 </td>
               </tr>
             </tbody>
