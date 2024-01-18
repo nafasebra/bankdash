@@ -3,6 +3,7 @@ import Body from '@/components/layout/Body'
 import CreditCard from '@/components/ui/card/CreditCard'
 import Table from '@/components/ui/table/Table'
 import SimpleBarChart from '@/components/ui/chart/SimpleBarChart'
+import Tabbar from '@/components/ui/tabbar/Tabbar'
 
 function Transactions() {
   return (
@@ -25,6 +26,7 @@ function Transactions() {
       </div>
       <div className='flex flex-col gap-5'>
         <p className='text-primary-200 text-xl'>Weekly Activity</p>
+        <Tabbar />
         <Table />
       </div>
     </Body>
