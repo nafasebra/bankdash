@@ -36,8 +36,8 @@ function Transactions() {
           <TabIndicator
             mt="-1.5px"
             height="2px"
-            bg="primary.100"
             borderRadius="1px"
+            className='bg-primary-100'
           />
           <TabPanels>
             <TabPanel>
