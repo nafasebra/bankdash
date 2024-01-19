@@ -3,7 +3,8 @@ import Body from '@/components/layout/Body'
 import CreditCard from '@/components/ui/card/CreditCard'
 import Table from '@/components/ui/table/Table'
 import SimpleBarChart from '@/components/ui/chart/SimpleBarChart'
-import Tabbar from '@/components/ui/tabbar/Tabbar'
+// import Tabbar from '@/components/ui/tabbar/Tabbar'
+import { Tabs, TabList, TabPanels, Tab, TabPanel, TabIndicator } from '@chakra-ui/react'
 
 function Transactions() {
   return (
@@ -26,8 +27,30 @@ function Transactions() {
       </div>
       <div className='flex flex-col gap-5'>
         <p className='text-primary-200 text-xl'>Weekly Activity</p>
-        <Tabbar />
-        <Table />
+        <Tabs position="relative" variant="unstyled">
+          <TabList>
+            <Tab>One</Tab>
+            <Tab>Two</Tab>
+            <Tab>Three</Tab>
+          </TabList>
+          <TabIndicator
+            mt="-1.5px"
+            height="2px"
+            bg="primary.100"
+            borderRadius="1px"
+          />
+          <TabPanels>
+            <TabPanel>
+              <Table />
+            </TabPanel>
+            <TabPanel>
+              <Table />
+            </TabPanel>
+            <TabPanel>
+              <Table />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
       </div>
     </Body>
   )

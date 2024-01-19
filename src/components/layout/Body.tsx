@@ -1,7 +1,8 @@
 import React from 'react'
-import Sidebar from './Sidebar';
-import Navbar from './Navbar';
+import Sidebar from '@/components/layout/Sidebar';
+import Navbar from '@/components/layout/Navbar';
 import { linkEnum } from '@/enums/link';
+import { ChakraProvider } from '@chakra-ui/react';
 
 interface BodyProps {
   pageName: linkEnum;
@@ -12,7 +13,7 @@ function Body(props: BodyProps) {
   const { children, pageName } = props;
 
   return (
-    <>
+    <ChakraProvider>
       <section className='min-h-screen w-full flex'>
         <Sidebar active={pageName} />
         <main className='w-[calc(100%-300px)]'>
@@ -22,7 +23,7 @@ function Body(props: BodyProps) {
           </section>
         </main>
       </section>
-    </>
+    </ChakraProvider>
   )
 }
 
