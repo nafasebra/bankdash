@@ -20,7 +20,7 @@ function Navbar(props: NavbarProps) {
       <div className="flex items-center gap-4">
         <SearchInput handleSubmit={handleSubmit} />
         {/* setting button */}
-        <LightButton className="text-dark-blue">
+        <LightButton className="text-primary-400">
           <SettingOIcon />
         </LightButton>
         {/* notification button */}

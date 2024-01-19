@@ -6,10 +6,10 @@ function Tabbar() {
       <button className="py-4 px-2 font-bold text-primary-100 relative after:contents-['*'] after:absolute after:left-0 after:bottom-0 after:right-0 after:w-full after:h-1 after:bg-primary-100 after:rounded-t-lg">
         All Transactions
       </button>
-      <button className='py-4 px-2 font-bold text-dark-blue'>
+      <button className='py-4 px-2 font-bold text-primary-400'>
         Income
       </button>
-      <button className='py-4 px-2 font-bold text-dark-blue'>
+      <button className='py-4 px-2 font-bold text-primary-400'>
         Expense
       </button>
     </div>

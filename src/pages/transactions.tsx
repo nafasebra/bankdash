@@ -29,9 +29,9 @@ function Transactions() {
         <p className='text-primary-200 text-xl'>Weekly Activity</p>
         <Tabs position="relative" variant="unstyled">
           <TabList>
-            <Tab>One</Tab>
-            <Tab>Two</Tab>
-            <Tab>Three</Tab>
+            <Tab className='py-4 px-2 font-bold text-primary-400'>One</Tab>
+            <Tab className='py-4 px-2 font-bold text-primary-400'>Two</Tab>
+            <Tab className='py-4 px-2 font-bold text-primary-400'>Three</Tab>
           </TabList>
           <TabIndicator
             mt="-1.5px"

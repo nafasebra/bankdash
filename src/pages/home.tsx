@@ -28,7 +28,7 @@ function Home() {
               <div className='w-[calc(100%-55px-0.75rem)] space-y-1 flex items-center justify-between'>
                 <div className='space-y-1'>
                   <p className='text-black text-lg'>Deposit from my Card</p>
-                  <p className='text-dark-blue'>25 January 2021</p>
+                  <p className='text-primary-400'>25 January 2021</p>
                 </div>
                 <p className='text-magenta font-bold'>-$500</p>
               </div>
@@ -40,7 +40,7 @@ function Home() {
               <div className='w-[calc(100%-55px-0.75rem)] space-y-1 flex items-center justify-between'>
                 <div className='space-y-1'>
                   <p className='text-black text-lg'>Deposit Paypal</p>
-                  <p className='text-dark-blue'>25 January 2021</p>
+                  <p className='text-primary-400'>25 January 2021</p>
                 </div>
                 <p className='text-cyan font-bold'>+$500</p>
               </div>
@@ -52,7 +52,7 @@ function Home() {
               <div className='w-[calc(100%-55px-0.75rem)] space-y-1 flex items-center justify-between'>
                 <div className='space-y-1'>
                   <p className='text-black text-lg'>Jemi Wilson</p>
-                  <p className='text-dark-blue'>25 January 2021</p>
+                  <p className='text-primary-400'>25 January 2021</p>
                 </div>
                 <p className='text-cyan font-bold'>+$500</p>
               </div>
