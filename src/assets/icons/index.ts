@@ -14,3 +14,6 @@ export { default as CoinIcon } from "./Coin";
 export { default as CardIcon } from "./Card";
 export { default as ArrowUpIcon } from "./ArrowUp";
 export { default as ArrowDownIcon } from "./ArrowDown";
+export { default as Service2nIcon } from "./Service";
+export { default as Settings2Icon } from "./Settings-2";
+export { default as BarIcon } from "./Bar";
