@@ -4,9 +4,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from '@/pages/home.tsx';
+import Home from '@/pages/home';
 import '@/styles/main.scss'
-import Transactions from '@/pages/transactions.tsx';
+import Transactions from '@/pages/transactions';
+import Loans from '@/pages/loans';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/transactions',
     element: <Transactions />,
+  },
+  {
+    path: '/loans',
+    element: <Loans />,
   },
 ]);
 
