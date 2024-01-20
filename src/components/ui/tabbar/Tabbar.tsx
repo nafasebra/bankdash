@@ -1,18 +1,31 @@
-import React from 'react'
+import { Tab, TabIndicator, TabList, TabPanel, TabPanels, Table, Tabs } from '@chakra-ui/react'
 
 function Tabbar() {
   return (
-    <div className='flex border-b border-gray-200 gap-5'>
-      <button className="py-4 px-2 font-bold text-primary-100 relative after:contents-['*'] after:absolute after:left-0 after:bottom-0 after:right-0 after:w-full after:h-1 after:bg-primary-100 after:rounded-t-lg">
-        All Transactions
-      </button>
-      <button className='py-4 px-2 font-bold text-primary-400'>
-        Income
-      </button>
-      <button className='py-4 px-2 font-bold text-primary-400'>
-        Expense
-      </button>
-    </div>
+    <Tabs position="relative" variant="unstyled">
+      <TabList>
+        <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>All Transactions</Tab>
+        <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>Income</Tab>
+        <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>Expense</Tab>
+      </TabList>
+      <TabIndicator
+        mt="-1.5px"
+        height="3px"
+        borderTopRadius="5px"
+        bg='primary.100'
+      />
+      <TabPanels>
+        <TabPanel>
+          <Table />
+        </TabPanel>
+        <TabPanel>
+          <Table />
+        </TabPanel>
+        <TabPanel>
+          <Table />
+        </TabPanel>
+      </TabPanels>
+    </Tabs>
   )
 }
 

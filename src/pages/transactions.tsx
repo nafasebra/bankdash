@@ -1,10 +1,8 @@
 import { linkEnum } from '@/enums/link'
 import Body from '@/components/layout/Body'
 import CreditCard from '@/components/ui/card/CreditCard'
-import Table from '@/components/ui/table/Table'
 import SimpleBarChart from '@/components/ui/chart/SimpleBarChart'
-// import Tabbar from '@/components/ui/tabbar/Tabbar'
-import { Tabs, TabList, TabPanels, Tab, TabPanel, TabIndicator } from '@chakra-ui/react'
+import Tabbar from '@/components/ui/tabbar/Tabbar'
 
 function Transactions() {
   return (
@@ -27,30 +25,7 @@ function Transactions() {
       </div>
       <div className='flex flex-col gap-5'>
         <p className='text-primary-200 text-xl'>Weekly Activity</p>
-        <Tabs position="relative" variant="unstyled">
-          <TabList>
-            <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>One</Tab>
-            <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>Two</Tab>
-            <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>Three</Tab>
-          </TabList>
-          <TabIndicator
-            mt="-1.5px"
-            height="3px"
-            borderTopRadius="5px"
-            bg='primary.100'
-          />
-          <TabPanels>
-            <TabPanel>
-              <Table />
-            </TabPanel>
-            <TabPanel>
-              <Table />
-            </TabPanel>
-            <TabPanel>
-              <Table />
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
+        <Tabbar />
       </div>
     </Body>
   )
