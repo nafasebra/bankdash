@@ -4,6 +4,8 @@ import Navbar from '@/components/layout/Navbar';
 import { linkEnum } from '@/enums/link';
 import { ChakraProvider } from '@chakra-ui/react';
 
+import {theme} from '@/theme'
+
 interface BodyProps {
   pageName: linkEnum;
   children: React.ReactNode[] | React.ReactNode;
@@ -13,7 +15,7 @@ function Body(props: BodyProps) {
   const { children, pageName } = props;
 
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <section className='min-h-screen w-full flex'>
         <Sidebar active={pageName} />
         <main className='w-[calc(100%-300px)]'>

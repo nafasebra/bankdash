@@ -29,15 +29,15 @@ function Transactions() {
         <p className='text-primary-200 text-xl'>Weekly Activity</p>
         <Tabs position="relative" variant="unstyled">
           <TabList>
-            <Tab className='py-4 px-2 font-bold text-primary-400'>One</Tab>
-            <Tab className='py-4 px-2 font-bold text-primary-400'>Two</Tab>
-            <Tab className='py-4 px-2 font-bold text-primary-400'>Three</Tab>
+            <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>One</Tab>
+            <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>Two</Tab>
+            <Tab _selected={{color: 'primary.100'}} className='py-4 px-2 font-semibold text-primary-200'>Three</Tab>
           </TabList>
           <TabIndicator
             mt="-1.5px"
-            height="2px"
-            borderRadius="1px"
-            className='bg-primary-100'
+            height="3px"
+            borderTopRadius="5px"
+            bg='primary.100'
           />
           <TabPanels>
             <TabPanel>
