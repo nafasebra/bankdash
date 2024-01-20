@@ -3,6 +3,7 @@ import Body from '@/components/layout/Body'
 import { AccountIcon, BarIcon, Service2nIcon, Settings2Icon } from '@/assets/icons'
 import IconCard from '@/components/ui/card/IconCard'
 import LoanTable from '@/components/ui/table/LoanTable'
+import SectionWithTitle from '@/components/pages/SectionWithTitle'
 
 function Loans() {
   return (
@@ -13,10 +14,9 @@ function Loans() {
         <IconCard icon={<BarIcon />} supTitle='Business Loans' title='$500,000' mainColor='text-magenta' mainColorAlpha='bg-magenta/20' />
         <IconCard icon={<Settings2Icon />} supTitle='Custom Loans' title='Choose Money' mainColor='text-cyan' mainColorAlpha='bg-cyan/20' />
       </div>
-      <div className='flex flex-col gap-5'>
-        <p className='flex items-center text-2xl font-semibold text-primary-200'>Active Loans Overview</p>
+      <SectionWithTitle title='Active Loans Overview'>
         <LoanTable />
-      </div>
+      </SectionWithTitle>
     </Body>
   )
 }
