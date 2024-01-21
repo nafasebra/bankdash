@@ -5,9 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from '@/pages/home';
-import '@/styles/main.scss'
 import Transactions from '@/pages/transactions';
 import Loans from '@/pages/loans';
+import Services from '@/pages/services';
+import '@/styles/main.scss'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/loans',
     element: <Loans />,
+  },
+  {
+    path: '/services',
+    element: <Services />,
   },
 ]);
 
