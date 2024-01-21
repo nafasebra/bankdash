@@ -17,3 +17,7 @@ export { default as ArrowDownIcon } from "./ArrowDown";
 export { default as Service2nIcon } from "./Service";
 export { default as Settings2Icon } from "./Settings-2";
 export { default as BarIcon } from "./Bar";
+export { default as SafeIcon } from "./Safe";
+export { default as LifeIcon } from "./Life";
+export { default as BagIcon } from "./Bag";
+export { default as SellIcon } from "./Sell";
