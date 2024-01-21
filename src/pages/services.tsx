@@ -15,6 +15,7 @@ function Services() {
           title="$50,000"
           mainColor="text-primary-100"
           mainColorAlpha="bg-primary-100/20"
+          reverse={false}
         />
         <IconCard
           icon={<BagIcon />}
@@ -22,6 +23,7 @@ function Services() {
           title="$100,000"
           mainColor="text-yellow"
           mainColorAlpha="bg-yellow/20"
+          reverse={false}
         />
         <IconCard
           icon={<SafeIcon />}
@@ -29,6 +31,7 @@ function Services() {
           title="$500,000"
           mainColor="text-magenta"
           mainColorAlpha="bg-magenta/20"
+          reverse={false}
         />
       </div>
       <SectionWithTitle title="Active Loans Overview">
