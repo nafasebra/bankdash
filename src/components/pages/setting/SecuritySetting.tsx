@@ -5,7 +5,7 @@ function SecuritySetting() {
     <div className='flex flex-col gap-5 w-full sm:w-[50%] pt-5'>
       <div className='space-y-3'>
         <p>Two-factor Authentication</p>
-        <FormControl display='flex' alignItems='center'>
+        <FormControl display='flex' alignItems='center' gap='10px'>
           <Switch id='email-alerts' />
           <FormLabel htmlFor='email-alerts' mb='0'>
             Enable or disable two factor authentication

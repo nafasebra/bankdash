@@ -16,19 +16,19 @@ function PreferenceSetting() {
       <div className='space-y-3'>
         <p>Notification</p>
         <div className='space-y-2'>
-          <FormControl display='flex' alignItems='center'>
+          <FormControl display='flex' alignItems='center' gap='10px'>
             <Switch id='email-alerts' />
             <FormLabel htmlFor='email-alerts' mb='0'>
               I send or receive digita currency
             </FormLabel>
           </FormControl>
-          <FormControl display='flex' alignItems='center'>
+          <FormControl display='flex' alignItems='center' gap='10px'>
             <Switch id='email-alerts' />
             <FormLabel htmlFor='email-alerts' mb='0'>
               I receive merchant order
             </FormLabel>
           </FormControl>
-          <FormControl display='flex' alignItems='center'>
+          <FormControl display='flex' alignItems='center' gap='10px'>
             <Switch id='email-alerts' />
             <FormLabel htmlFor='email-alerts' mb='0'>
               There are recommendation for my account
