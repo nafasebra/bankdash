@@ -35,7 +35,7 @@ function Setting() {
         </Tabs>
         <div className="flex justify-end">
           <div className="flex flex-col w-[150px]">
-            <Button bgColor="primary.100" color="white" size='lg'>
+            <Button colorScheme="primary" size='lg'>
               Save
             </Button>
           </div>

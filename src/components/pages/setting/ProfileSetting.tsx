@@ -4,24 +4,24 @@ import { PencilIcon } from "@/assets/icons";
 
 function ProfileSetting() {
   return (
-    <div className="flex flex-col md:flex-row gap-5 pt-5">
-      <div className="w-full md:w-[250px]">
+    <div className="flex flex-col md:flex-row gap-8 pt-5">
+      <div className="w-full md:w-[200px]">
         <div className="relative">
-          <div className="w-[60px] h-[60px] flex items-center justify-center rounded-full overflow-hidden">
+          <div className="flex items-center justify-center rounded-full overflow-hidden">
             <img
               src={avatar}
               className="w-full h-full object-cover aspect-auto"
               alt="avatar of username"
             />
           </div>
-          <div className="w-8 h-8 bg-primary-100 text-white rounded-full flex items-center justify-center">
-            <div className="w-6 h-6">
+          <button type="button" className="absolute bottom-3 right-3 w-10 h-10 bg-primary-100 text-white rounded-full flex items-center justify-center">
+            <div className="w-6 h-6 flex items-center justify-center">
               <PencilIcon />
             </div>
-          </div>
+          </button>
         </div>
       </div>
-      <div className="w-full md:w-[calc(100%-250px-1.25rem)] space-y-5">
+      <div className="w-full md:w-[calc(100%-200px-2rem)] space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="space-y-3">
             <label htmlFor="">Your Name</label>
