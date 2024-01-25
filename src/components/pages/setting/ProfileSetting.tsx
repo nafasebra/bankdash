@@ -1,4 +1,4 @@
-import { Button, Input } from "@chakra-ui/react";
+import { Input } from "@chakra-ui/react";
 import avatar from "@/assets/images/avatar.png";
 import { PencilIcon } from "@/assets/icons";
 
@@ -25,53 +25,48 @@ function ProfileSetting() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="space-y-3">
             <label htmlFor="">Your Name</label>
-            <Input placeholder="Charlene Reed" size="md" />
+            <Input placeholder="Charlene Reed" size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">User Name</label>
-            <Input placeholder="Charlene Reed " size="md" />
+            <Input placeholder="Charlene Reed " size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Email</label>
-            <Input placeholder="charlenereed@gmail.com  " size="md" />
+            <Input placeholder="charlenereed@gmail.com  " size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Password</label>
-            <Input placeholder="******" size="md" />
+            <Input placeholder="******" size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Date of Birth</label>
             <Input
               placeholder="Select Date and Time"
-              size="md"
+              size="lg"
               type="datetime-local"
             />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Present Address</label>
-            <Input placeholder="San Jose, California, USA" size="md" />
+            <Input placeholder="San Jose, California, USA" size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Permanent Address</label>
-            <Input placeholder="San Jose, California, USA" size="md" />
+            <Input placeholder="San Jose, California, USA" size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">City</label>
-            <Input placeholder="San Jose" size="md" />
+            <Input placeholder="San Jose" size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Postal Code</label>
-            <Input placeholder="45962" size="md" />
+            <Input placeholder="45962" size="lg" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Country</label>
-            <Input placeholder="USA" size="md" />
+            <Input placeholder="USA" size="lg" />
           </div>
-        </div>
-        <div className="flex justify-end">
-          <Button size='md'>
-            Save
-          </Button>
         </div>
       </div>
     </div>
