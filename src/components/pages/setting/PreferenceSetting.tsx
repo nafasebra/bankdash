@@ -6,11 +6,11 @@ function PreferenceSetting() {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
         <div className="space-y-3">
           <label htmlFor="">Currency</label>
-          <Input placeholder="USD" size="lg" />
+          <Input placeholder="USD" />
         </div>
         <div className="space-y-3">
           <label htmlFor="">Time Zone</label>
-          <Input placeholder="(GMT-12:00) International Date Line West" size="lg" />
+          <Input placeholder="(GMT-12:00) International Date Line West" />
         </div>
       </div>
       <div className='space-y-3'>

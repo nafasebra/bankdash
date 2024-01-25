@@ -25,19 +25,19 @@ function ProfileSetting() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="space-y-3">
             <label htmlFor="">Your Name</label>
-            <Input placeholder="Charlene Reed" size="lg" />
+            <Input placeholder="Charlene Reed" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">User Name</label>
-            <Input placeholder="Charlene Reed " size="lg" />
+            <Input placeholder="Charlene Reed " />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Email</label>
-            <Input placeholder="charlenereed@gmail.com  " size="lg" />
+            <Input placeholder="charlenereed@gmail.com  " />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Password</label>
-            <Input placeholder="******" size="lg" />
+            <Input placeholder="******" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Date of Birth</label>
@@ -49,23 +49,23 @@ function ProfileSetting() {
           </div>
           <div className="space-y-3">
             <label htmlFor="">Present Address</label>
-            <Input placeholder="San Jose, California, USA" size="lg" />
+            <Input placeholder="San Jose, California, USA" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Permanent Address</label>
-            <Input placeholder="San Jose, California, USA" size="lg" />
+            <Input placeholder="San Jose, California, USA" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">City</label>
-            <Input placeholder="San Jose" size="lg" />
+            <Input placeholder="San Jose" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Postal Code</label>
-            <Input placeholder="45962" size="lg" />
+            <Input placeholder="45962" />
           </div>
           <div className="space-y-3">
             <label htmlFor="">Country</label>
-            <Input placeholder="USA" size="lg" />
+            <Input placeholder="USA" />
           </div>
         </div>
       </div>

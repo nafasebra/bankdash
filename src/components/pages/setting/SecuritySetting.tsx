@@ -16,11 +16,11 @@ function SecuritySetting() {
         <p>Change Password</p>
         <div className="space-y-3">
           <label htmlFor="">Current Password</label>
-          <Input placeholder="**********" size="lg" />
+          <Input placeholder="**********" />
         </div>
         <div className="space-y-3">
           <label htmlFor="">New Password</label>
-          <Input placeholder="**********" size="lg" />
+          <Input placeholder="**********" />
         </div>
       </div>
     </div>
