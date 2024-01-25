@@ -1,8 +1,9 @@
 import { linkEnum } from "@/enums/link";
 import Body from "@/components/layout/Body";
-import { Button, Tab, TabIndicator, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import ProfileSetting from "@/components/pages/setting/ProfileSetting";
 import PreferenceSetting from "@/components/pages/setting/PreferenceSetting";
+import SecuritySetting from "@/components/pages/setting/SecuritySetting";
+import { Button, Tab, TabIndicator, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 
 function Setting() {
   return (
@@ -28,7 +29,7 @@ function Setting() {
               <PreferenceSetting />
             </TabPanel>
             <TabPanel>
-              
+              <SecuritySetting />
             </TabPanel>
           </TabPanels>
         </Tabs>
