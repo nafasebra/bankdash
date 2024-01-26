@@ -1,15 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from '@/pages/home';
-import Transactions from '@/pages/transactions';
-import Loans from '@/pages/loans';
-import Services from '@/pages/services';
-import Setting from '@/pages/setting';
-import '@/styles/main.scss'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "@/pages/home";
+import Transactions from "@/pages/transactions";
+import Accounts from "@/pages/accounts";
+import Loans from "@/pages/loans";
+import Services from "@/pages/services";
+import Setting from "@/pages/setting";
+import "@/styles/main.scss";
 
 const router = createBrowserRouter([
   {
@@ -17,25 +15,29 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/transactions',
+    path: "/transactions",
     element: <Transactions />,
   },
   {
-    path: '/loans',
+    path: "/accounts",
+    element: <Accounts />,
+  },
+  {
+    path: "/loans",
     element: <Loans />,
   },
   {
-    path: '/services',
+    path: "/services",
     element: <Services />,
   },
   {
-    path: '/setting',
+    path: "/setting",
     element: <Setting />,
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
