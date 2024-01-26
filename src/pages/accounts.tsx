@@ -9,6 +9,7 @@ import Body from "@/components/layout/Body";
 import IconCard from "@/components/ui/card/IconCard";
 import CreditCard from "@/components/ui/card/CreditCard";
 import LastTransactionTable from "@/components/ui/table/LastTransactionTable";
+import InvoicesSentTable from "@/components/ui/table/InvoicesSentTable";
 
 function Accounts() {
   return (
@@ -53,7 +54,7 @@ function Accounts() {
           <LastTransactionTable />
         </div>
         <div className='flex flex-col gap-5'>
-          <div className="flex items-center">
+          <div className="flex items-center justify-between">
             <p className='text-primary-200 text-xl'>My Card</p>
             <p className='text-primary-200 text-lg'>See all</p>
           </div>
@@ -67,6 +68,7 @@ function Accounts() {
         </div>
         <div className='flex flex-col gap-5'>
           <p className='text-primary-200 text-xl'>Invoices Sent</p>
+          <InvoicesSentTable />
         </div>
       </div>
     </Body>
