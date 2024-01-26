@@ -49,7 +49,7 @@ function CreditCard(props: CreditCardProps) {
         </div>
       </div>
       <div className="bg-gradient-to-br from-white/15 to-transparent flex items-center justify-between px-6 py-4">
-        <p className="font-bold text-xl">3778 **** **** 1234</p>
+        <p className="font-semibold text-xl">3778 **** **** 1234</p>
         {theme === "white" ? (
           <img src={BankLogoBlack} className="w-[50px]" />
         ) : (

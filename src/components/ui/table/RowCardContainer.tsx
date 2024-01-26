@@ -1,4 +1,4 @@
-import RowCard from "../card/RowCard";
+import RowCard from "@/components/ui/card/RowCard";
 
 function RowCardContainer() {
   return (

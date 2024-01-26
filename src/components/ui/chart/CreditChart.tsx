@@ -49,7 +49,7 @@ export const data = {
     {
       label: 'Dataset 2',
       data: labels.map(() => faker.number.int({ min: 200, max: 500 })),
-      backgroundColor: 'rgba(22, 219, 204, 1)',
+      backgroundColor: 'rgba(254, 170, 9, 1)',
       borderWidth: 2,
       borderRadius: 30,
       barPercentage: 0.45,
@@ -58,8 +58,8 @@ export const data = {
   ],
 };
 
-function BarChart() {
+function CreditChart() {
   return <Bar height={150} options={options} data={data} />;
 }
 
-export default BarChart;
+export default CreditChart;

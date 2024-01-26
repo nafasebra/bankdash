@@ -1,5 +1,5 @@
 import { linkEnum } from '@/enums/link'
-import Body from '../components/layout/Body'
+import Body from '@/components/layout/Body'
 import { CardIcon, CoinIcon, PaypalIcon } from '@/assets/icons'
 import CreditCard from '@/components/ui/card/CreditCard'
 import LineChart from '@/components/ui/chart/LineChart'
@@ -30,7 +30,7 @@ function Home() {
                   <p className='text-black text-lg'>Deposit from my Card</p>
                   <p className='text-primary-400'>25 January 2021</p>
                 </div>
-                <p className='text-magenta font-bold'>-$500</p>
+                <p className='text-magenta font-semibold'>-$500</p>
               </div>
             </li>
             <li className='flex items-center gap-3'>
@@ -42,7 +42,7 @@ function Home() {
                   <p className='text-black text-lg'>Deposit Paypal</p>
                   <p className='text-primary-400'>25 January 2021</p>
                 </div>
-                <p className='text-cyan font-bold'>+$500</p>
+                <p className='text-cyan font-semibold'>+$500</p>
               </div>
             </li>
             <li className='flex items-center gap-3'>
@@ -54,7 +54,7 @@ function Home() {
                   <p className='text-black text-lg'>Jemi Wilson</p>
                   <p className='text-primary-400'>25 January 2021</p>
                 </div>
-                <p className='text-cyan font-bold'>+$500</p>
+                <p className='text-cyan font-semibold'>+$500</p>
               </div>
             </li>
           </ul>

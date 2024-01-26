@@ -16,7 +16,7 @@ function Navbar(props: NavbarProps) {
 
   return (
     <nav className="bg-white flex items-center justify-between gap-10 px-8 py-4">
-      <p className="text-xl font-bold text-primary-200">{pageName}</p>
+      <p className="text-xl font-semibold text-primary-200">{pageName}</p>
       <div className="flex items-center gap-4">
         <SearchInput handleSubmit={handleSubmit} />
         {/* setting button */}

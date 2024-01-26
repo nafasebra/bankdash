@@ -10,6 +10,7 @@ import IconCard from "@/components/ui/card/IconCard";
 import CreditCard from "@/components/ui/card/CreditCard";
 import LastTransactionTable from "@/components/ui/table/LastTransactionTable";
 import InvoicesSentTable from "@/components/ui/table/InvoicesSentTable";
+import DebitCreditCard from "@/components/ui/card/DebitCreditCard";
 
 function Accounts() {
   return (
@@ -64,7 +65,7 @@ function Accounts() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div className='col-span-1 lg:col-span-2 flex flex-col gap-5'>
           <p className='text-primary-200 text-xl'>Debit & Credit Overview</p>
-          <div className="bg-white overflow-hidden p-6 rounded-lg"></div>
+          <DebitCreditCard />
         </div>
         <div className='flex flex-col gap-5'>
           <p className='text-primary-200 text-xl'>Invoices Sent</p>
