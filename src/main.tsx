@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "@/pages/home";
 import Transactions from "@/pages/transactions";
 import Accounts from "@/pages/accounts";
+import Credit from "@/pages/credit";
 import Loans from "@/pages/loans";
 import Services from "@/pages/services";
 import Setting from "@/pages/setting";
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/accounts",
     element: <Accounts />,
+  },
+  {
+    path: "/credit",
+    element: <Credit />,
   },
   {
     path: "/loans",
