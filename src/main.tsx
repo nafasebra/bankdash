@@ -8,6 +8,7 @@ import Credit from "@/pages/credit";
 import Loans from "@/pages/loans";
 import Services from "@/pages/services";
 import Setting from "@/pages/setting";
+import Investment from "@/pages/investment";
 import "@/styles/main.scss";
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/accounts",
     element: <Accounts />,
+  },
+  {
+    path: "/investments",
+    element: <Investment />,
   },
   {
     path: "/cards",
