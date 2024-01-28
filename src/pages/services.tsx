@@ -3,7 +3,7 @@ import Body from "@/components/layout/Body";
 import { BagIcon, LifeIcon, SafeIcon } from "@/assets/icons";
 import IconCard from "@/components/ui/card/IconCard";
 import SectionWithTitle from "@/components/pages/SectionWithTitle";
-import RowCardContainer from "@/components/ui/table/RowCardContainer";
+import RowCard from "@/components/ui/card/RowCard";
 
 function Services() {
   return (
@@ -31,11 +31,18 @@ function Services() {
           title="Safety"
           mainColor="text-cyan"
           mainColorAlpha="bg-cyan/20"
-          reverse={false} 
+          reverse={false}
         />
       </div>
       <SectionWithTitle title="Bank Services List">
-        <RowCardContainer />
+        <div className="overflow-x-hidden">
+          <div className="overflow-x-auto space-y-3">
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+          </div>
+        </div>
       </SectionWithTitle>
     </Body>
   );
