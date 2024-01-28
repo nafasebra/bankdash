@@ -1,8 +1,10 @@
 import { linkEnum } from "@/types/enums/link";
 import Body from "@/components/layout/Body";
 import IconCard from "@/components/ui/card/IconCard";
-import { CoinPackIcon, ReturnIcon } from "@/assets/icons";
-import PieChart from "@/components/ui/chart/PieChart";
+import { CoinPackIcon, PieChartIcon, ReturnIcon } from "@/assets/icons";
+import SectionWithTitle from "@/components/pages/SectionWithTitle";
+import InvestmentChart from "@/components/pages/investment/InvestmentChart";
+import RevenueChart from "@/components/pages/investment/RevenueChart";
 
 function Investment() {
   return (
@@ -10,28 +12,40 @@ function Investment() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         <IconCard
           icon={<CoinPackIcon />}
-          supTitle="Corporate Loans"
-          title="$100,000"
+          supTitle="Total Invested Amount"
+          title="$150,000"
           mainColor="text-cyan"
           mainColorAlpha="bg-cyan/20"
           reverse
         />
         <IconCard
-          icon={<PieChart />}
-          supTitle="Business Loans"
-          title="$500,000"
+          icon={<PieChartIcon />}
+          supTitle="Number of Investments"
+          title="1,250"
           mainColor="text-magenta"
           mainColorAlpha="bg-magenta/20"
           reverse
         />
         <IconCard
           icon={<ReturnIcon />}
-          supTitle="Custom Loans"
-          title="Choose Money"
-          mainColor="text-cyan"
-          mainColorAlpha="bg-cyan/20"
+          supTitle="Rate of Return"
+          title="+5.80%"
+          mainColor="text-primary"
+          mainColorAlpha="bg-primary/20"
           reverse
         />
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <SectionWithTitle title="Yearly Total Investment">
+          <div className="bg-white p-6 overflow-hidden rounded-lg">
+            <InvestmentChart />
+          </div>
+        </SectionWithTitle>
+        <SectionWithTitle title="Monthly Revenue">
+          <div className="bg-white p-6 overflow-hidden rounded-lg">
+            <RevenueChart />
+          </div>
+        </SectionWithTitle>
       </div>
     </Body>
   );
