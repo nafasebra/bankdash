@@ -31,3 +31,7 @@ export { default as CashIcon } from "./Cash";
 export { default as CashOIcon } from "./CashOutline";
 export { default as GoogleIcon } from "./Google";
 export { default as LockIcon } from "./Lock";
+export { default as CoinPackIcon } from "./CoinPack";
+export { default as PieChartIcon } from "./PieChart";
+export { default as ReturnIcon } from "./Return";
+export { default as TeslaIcon } from "./Tesla";
