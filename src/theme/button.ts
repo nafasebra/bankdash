@@ -6,15 +6,16 @@ export const Button = defineStyleConfig({
     fontSize: '16px',
   },
   variants: {
-    solid: ({ colorScheme }) => ({
+    solid: {
       rounded: 'md',
       h: 12,
-      bg: `${colorScheme}.100`,
+      bg: `primary.100`,
       textColor: 'white',
 
       _hover: {
-        bg: `${colorScheme}.300`,
+        bg: `primary.300`,
       },
-    }),
+    },
   },
+  defaultProps: {variant: 'solid'}
 });
