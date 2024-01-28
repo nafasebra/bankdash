@@ -28,3 +28,6 @@ export { default as SettingO2Icon } from "./SettingOutline2";
 export { default as AppleIcon } from "./Apple";
 export { default as PlaystationIcon } from "./Playstation";
 export { default as CashIcon } from "./Cash";
+export { default as CashOIcon } from "./CashOutline";
+export { default as GoogleIcon } from "./Google";
+export { default as LockIcon } from "./Lock";
