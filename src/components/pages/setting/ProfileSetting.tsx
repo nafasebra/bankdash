@@ -43,7 +43,6 @@ function ProfileSetting() {
             <label htmlFor="">Date of Birth</label>
             <Input
               placeholder="Select Date and Time"
-              size="lg"
               type="datetime-local"
             />
           </div>

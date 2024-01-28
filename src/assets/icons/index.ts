@@ -27,3 +27,4 @@ export { default as AccountOIcon } from "./AccountOutline";
 export { default as SettingO2Icon } from "./SettingOutline2";
 export { default as AppleIcon } from "./Apple";
 export { default as PlaystationIcon } from "./Playstation";
+export { default as CashIcon } from "./Cash";

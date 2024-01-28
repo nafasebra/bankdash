@@ -1,49 +1,37 @@
 import { linkEnum } from "@/enums/link";
-import {
-  AccountIcon,
-  BarIcon,
-  Service2nIcon,
-  Settings2Icon,
-} from "@/assets/icons";
 import Body from "@/components/layout/Body";
-import IconCard from "@/components/ui/card/IconCard";
+import CreditCard from "@/components/ui/card/CreditCard";
+import AddCardForm from "@/components/feature/AddCardForm";
 
 function Credit() {
   return (
     <Body pageName={linkEnum.Credit}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <IconCard
-          icon={<AccountIcon />}
-          supTitle="Personal Loans"
-          title="$50,000"
-          mainColor="text-primary-100"
-          mainColorAlpha="bg-primary-100/20"
-          reverse
-        />
-        <IconCard
-          icon={<Service2nIcon />}
-          supTitle="Corporate Loans"
-          title="$100,000"
-          mainColor="text-yellow"
-          mainColorAlpha="bg-yellow/20"
-          reverse
-        />
-        <IconCard
-          icon={<BarIcon />}
-          supTitle="Business Loans"
-          title="$500,000"
-          mainColor="text-magenta"
-          mainColorAlpha="bg-magenta/20"
-          reverse
-        />
-        <IconCard
-          icon={<Settings2Icon />}
-          supTitle="Custom Loans"
-          title="Choose Money"
-          mainColor="text-cyan"
-          mainColorAlpha="bg-cyan/20"
-          reverse
-        />
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <CreditCard theme="ocean" />
+        <CreditCard theme="blue" />
+        <CreditCard theme="white" />
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className='flex flex-col gap-5'>
+          <p className='text-primary-200 text-xl'>Card Expense Statistics</p>
+        </div>
+        <div className='col-span-1 lg:col-span-2 flex flex-col gap-5'>
+          <p className='text-primary-200 text-xl'>Card List</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className='col-span-1 lg:col-span-2 flex flex-col gap-5'>
+          <p className='text-primary-200 text-xl'>Card List</p>
+          <div className="bg-white rouonded-lg p-6 overflow-hidden">
+            <p className="text-primary-400">
+              Credit Card generally means a plastic card issued by Scheduled Commercial Banks assigned to a Cardholder, with a credit limit, that can be used to purchase goods and services on credit or obtain cash advances.
+            </p>
+            <AddCardForm />
+          </div>
+        </div>
+        <div className='flex flex-col gap-5'>
+          <p className='text-primary-200 text-xl'>Card Expense Statistics</p>
+        </div>
       </div>
     </Body>
   );
