@@ -5,6 +5,8 @@ import { CoinPackIcon, PieChartIcon, ReturnIcon } from "@/assets/icons";
 import SectionWithTitle from "@/components/pages/SectionWithTitle";
 import InvestmentChart from "@/components/pages/investment/InvestmentChart";
 import RevenueChart from "@/components/pages/investment/RevenueChart";
+import InvestmentTable from "@/components/pages/investment/InvestmentTable";
+import TrendingTable from "@/components/pages/investment/TrendingTable";
 
 function Investment() {
   return (
@@ -46,6 +48,18 @@ function Investment() {
             <RevenueChart />
           </div>
         </SectionWithTitle>
+      </div>
+      <div className="flex flex-col lg:flex-row gap-5">
+        <div className="w-full lg:w-[65%] flex flex-col gap-5">
+          <SectionWithTitle title="My Investment">
+            <InvestmentTable />
+          </SectionWithTitle>
+        </div>
+        <div className="w-full lg:w-[35%] flex flex-col gap-5">
+          <SectionWithTitle title="Trending Stock">
+            <TrendingTable />
+          </SectionWithTitle>
+        </div>
       </div>
     </Body>
   );
