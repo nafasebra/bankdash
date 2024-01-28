@@ -1,4 +1,4 @@
-import { linkEnum } from "@/enums/link";
+import { linkEnum } from "@/types/enums/link";
 import Body from "@/components/layout/Body";
 import { BagIcon, LifeIcon, SafeIcon } from "@/assets/icons";
 import IconCard from "@/components/ui/card/IconCard";

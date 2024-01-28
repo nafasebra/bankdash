@@ -1,4 +1,4 @@
-import { linkEnum } from "@/enums/link";
+import { linkEnum } from "@/types/enums/link";
 import Body from "@/components/layout/Body";
 import ProfileSetting from "@/components/pages/setting/ProfileSetting";
 import PreferenceSetting from "@/components/pages/setting/PreferenceSetting";

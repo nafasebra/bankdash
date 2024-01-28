@@ -10,7 +10,7 @@ import {
   TransactionIcon,
 } from "@/assets/icons";
 import { menuLinkType } from "@/types/link";
-import { linkEnum } from "@/enums/link";
+import { linkEnum } from "@/types/enums/link";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const menuLinks: menuLinkType[] = [

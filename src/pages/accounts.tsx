@@ -1,4 +1,4 @@
-import { linkEnum } from "@/enums/link";
+import { linkEnum } from "@/types/enums/link";
 import {
   AccountIcon,
   BarIcon,

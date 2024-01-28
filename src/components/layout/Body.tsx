@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from '@/components/layout/Sidebar';
 import Navbar from '@/components/layout/Navbar';
-import { linkEnum } from '@/enums/link';
+import { linkEnum } from '@/types/enums/link';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import {theme} from '@/theme'

@@ -1,4 +1,4 @@
-import { linkEnum } from '@/enums/link'
+import { linkEnum } from '@/types/enums/link'
 import Body from '@/components/layout/Body'
 import CreditCard from '@/components/ui/card/CreditCard'
 import SimpleBarChart from '@/components/ui/chart/SimpleBarChart'

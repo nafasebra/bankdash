@@ -1,4 +1,4 @@
-import { linkEnum } from '@/enums/link'
+import { linkEnum } from '@/types/enums/link'
 import Body from '@/components/layout/Body'
 import { CardIcon, CoinIcon, PaypalIcon } from '@/assets/icons'
 import CreditCard from '@/components/ui/card/CreditCard'
