@@ -3,12 +3,14 @@ import * as colors from './colors';
 import { Button } from './button';
 import { Input } from './input';
 import { Switch } from './switch';
+import { Popover } from './popover';
 
 export const theme = extendTheme({
   colors: colors,
   components: {
     Button,
     Input,
-    Switch
+    Switch,
+    Popover
   }
 });

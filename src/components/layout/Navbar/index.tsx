@@ -1,7 +1,7 @@
-import LightButton from "@/components/ui/button/LightButton";
 import SearchInput from "@/components/ui/input/SearchInput";
-import { BellIcon, SettingOIcon } from "@/assets/icons";
-import avatar from '@/assets/images/avatar.png'
+import ProfileButton from "./ProfileButton";
+import NotifButton from "./NotifButton";
+import SettingButton from "./SettingButton";
 
 interface NavbarProps {
   pageName: string;
@@ -20,20 +20,16 @@ function Navbar(props: NavbarProps) {
       <div className="flex items-center gap-4">
         <SearchInput handleSubmit={handleSubmit} />
         {/* setting button */}
-        <LightButton className="text-primary-400">
-          <SettingOIcon />
-        </LightButton>
+       <SettingButton /> 
         {/* notification button */}
-        <LightButton className="text-magenta">
-          <BellIcon />
-        </LightButton>
+        <NotifButton />
         {/* profile button */}
-        <button className="w-[50px] h-[50px] overflow-hidden flex items-center justify-center rounded-full">
-          <img src={avatar} className="w-full h-full object-cover aspect-auto" alt="avatar of username" />
-        </button>
+        <ProfileButton />
       </div>
     </nav>
   )
 }
+
+Navbar.displayName = "Navbar";
 
 export default Navbar
