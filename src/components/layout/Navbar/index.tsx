@@ -1,7 +1,9 @@
 import SearchInput from "@/components/ui/input/SearchInput";
 import ProfileButton from "./ProfileButton";
 import NotifButton from "./NotifButton";
-import SettingButton from "./SettingButton";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@chakra-ui/react";
+import { SettingOIcon } from "@/assets/icons";
 
 interface NavbarProps {
   pageName: string;
@@ -9,6 +11,7 @@ interface NavbarProps {
 
 function Navbar(props: NavbarProps) {
   const { pageName } = props;
+  const navigate = useNavigate();
 
   const handleSubmit = (value: string) => {
     console.log(value);
@@ -19,7 +22,9 @@ function Navbar(props: NavbarProps) {
       <p className="text-xl font-semibold text-primary-200">{pageName}</p>
       <div className="flex items-center gap-4">
         <SearchInput handleSubmit={handleSubmit} />
-        <SettingButton /> 
+        <Button variant="light" onClick={() => navigate('/settings')}>
+          <SettingOIcon />
+        </Button>
         <NotifButton />
         <ProfileButton />
       </div>
