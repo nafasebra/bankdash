@@ -36,3 +36,4 @@ export { default as PieChartIcon } from "./PieChart";
 export { default as ReturnIcon } from "./Return";
 export { default as TeslaIcon } from "./Tesla";
 export { default as CloseIcon } from "./Close";
+export { default as SendIcon } from "./Send";

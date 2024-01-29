@@ -5,6 +5,7 @@ import CreditCard from '@/components/ui/card/CreditCard'
 import LineChart from '@/components/ui/chart/LineChart'
 import PieChart from '@/components/ui/chart/PieChart'
 import BarChart from '@/components/ui/chart/BarChart'
+import SliderCard from '@/components/pages/home/SliderCard'
 
 function Home() {
   return (
@@ -75,13 +76,11 @@ function Home() {
         </div>
       </div>
       <div className="flex gap-5">
-        <div className='w-[35%] basis-[35%] space-y-4'>
+        <div className='w-[40%] basis-[40%] space-y-4'>
           <p className='text-primary-200 text-xl'>Quick Transfer</p>
-          <div className='bg-white rounded-xl overflow-hidden p-5'>
-            {/* add slider */}
-          </div>
+          <SliderCard />
         </div>
-        <div className='w-[65%] basis-[65%] space-y-4'>
+        <div className='w-[60%] basis-[60%] space-y-4'>
           <p className='text-primary-200 text-xl'>Balance History</p>
           <div className='bg-white rounded-xl overflow-hidden p-5'>
             <LineChart />
