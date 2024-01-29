@@ -1,5 +1,4 @@
 import { BellIcon } from "@/assets/icons";
-import LightButton from "@/components/ui/button/LightButton";
 import {
   Button,
   Popover,
@@ -12,14 +11,14 @@ import {
   Portal,
 } from "@chakra-ui/react";
 
-function SettingButton() {
+function NotifButton() {
   return (
     <>
       <Popover>
         <PopoverTrigger>
-          <LightButton className="text-magenta">
+          <Button variant="light" color="magenta">
             <BellIcon />
-          </LightButton>
+          </Button>
         </PopoverTrigger>
         <Portal>
           <PopoverContent>
@@ -38,4 +37,4 @@ function SettingButton() {
   );
 }
 
-export default SettingButton;
+export default NotifButton;

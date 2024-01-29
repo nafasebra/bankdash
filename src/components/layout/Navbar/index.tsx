@@ -19,11 +19,8 @@ function Navbar(props: NavbarProps) {
       <p className="text-xl font-semibold text-primary-200">{pageName}</p>
       <div className="flex items-center gap-4">
         <SearchInput handleSubmit={handleSubmit} />
-        {/* setting button */}
-       <SettingButton /> 
-        {/* notification button */}
+        <SettingButton /> 
         <NotifButton />
-        {/* profile button */}
         <ProfileButton />
       </div>
     </nav>

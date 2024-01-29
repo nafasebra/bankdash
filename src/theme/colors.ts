@@ -8,6 +8,7 @@ export const primary = {
 export const yellow = '#FEAA09';
 export const light = {
   DEFAULT: '#F5F7FA',
+  100: '#F5F7FA',
   200: '#DFEAF2'
 };
 export const magenta = '#FE5C73';

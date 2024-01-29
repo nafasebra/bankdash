@@ -1,5 +1,4 @@
 import { SettingOIcon } from "@/assets/icons";
-import LightButton from "@/components/ui/button/LightButton";
 import {
   Button,
   Popover,
@@ -18,9 +17,9 @@ function SettingButton() {
     <>
       <Popover>
         <PopoverTrigger>
-          <LightButton className="text-primary-400">
+          <Button variant="light" color="primary.400">
             <SettingOIcon />
-          </LightButton>
+          </Button>
         </PopoverTrigger>
         <Portal>
           <PopoverContent>
