@@ -35,7 +35,7 @@ function NotifButton() {
 
   const readNotif = (index: number) => {
     setNotif(() => {
-      return [...notif.filter((item) => item.id === index)];
+      return [...notif.filter((item) => item.id !== index)];
     });
   };
 
