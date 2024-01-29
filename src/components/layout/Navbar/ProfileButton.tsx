@@ -1,10 +1,8 @@
 import {
-  Button,
   Popover,
   PopoverArrow,
   PopoverBody,
   PopoverContent,
-  PopoverFooter,
   PopoverHeader,
   PopoverTrigger,
   Portal,
@@ -28,23 +26,24 @@ function ProfileButton() {
           <PopoverArrow />
           <PopoverHeader>
             <div className="flex items-center gap-4">
-              <div className="w-8 h-8 flex items-center justify-center rounded-full">
+              <div className="w-8 h-8 flex items-center justify-center rounded-full overflow-hidden">
                 <img
                   src={avatar}
                   className="w-full h-full object-cover aspect-auto"
                   alt="avatar of username"
                 />
               </div>
-              <div className="w-[calc(100%-3rem)] space-y-1">
+              <div className="w-[calc(100%-3rem)]">
                 <p className="leading-0">Nafas Ebrahimi</p>
-                <p className="text-primary-400 leading-0">Online</p>
+                <p className="text-primary-400 text-sm leading-0">Online</p>
               </div>
             </div>
           </PopoverHeader>
           <PopoverBody>
-            <Button>Button</Button>
+            <button type="button" className="w-full py-3 px-4 text-magenta hover:bg-light">
+              Sign out
+            </button>
           </PopoverBody>
-          <PopoverFooter>This is the footer</PopoverFooter>
         </PopoverContent>
       </Portal>
     </Popover>
