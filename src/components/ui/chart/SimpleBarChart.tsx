@@ -19,7 +19,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+const options = {
   responsive: true,
   plugins: {
     legend: {
@@ -51,7 +51,7 @@ export const options = {
 
 const labels = ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'];
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {

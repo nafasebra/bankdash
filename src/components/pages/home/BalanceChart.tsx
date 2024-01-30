@@ -23,7 +23,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+const options = {
   responsive: true,
   plugins: {
     legend: {
@@ -56,7 +56,7 @@ export const options = {
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {
@@ -70,8 +70,8 @@ export const data = {
   ],
 };
 
-function LineChart() {
+function BalanceChart() {
   return <Line height={120} options={options} data={data} />;
 }
 
-export default LineChart
+export default BalanceChart

@@ -42,10 +42,10 @@ const options = {
   },
 };
 
-function PieChart() {
+function ExpenseChart() {
   return (
     <Pie data={data} options={options} />
   );
 }
 
-export default PieChart;
+export default ExpenseChart;
