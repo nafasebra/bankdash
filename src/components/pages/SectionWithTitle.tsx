@@ -14,7 +14,9 @@ function SectionWithTitle(props: SectionProps) {
       <h2 className="flex items-center text-2xl font-semibold text-primary-200">
         {title}
       </h2>
-      {children}
+      <div className="bg-white p-5 overflow-hidden space-y-5 rounded-lg">
+        {children}
+      </div>
     </section>
   );
 }

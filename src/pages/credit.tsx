@@ -3,7 +3,7 @@ import Body from "@/components/layout/Body";
 import CreditCard from "@/components/ui/card/CreditCard";
 import AddCardForm from "@/components/feature/AddCardForm";
 import CardSettingCard from "@/components/ui/card/CardSettingCard";
-import PieChart from "@/components/ui/chart/PieChart";
+import {ExpenseChart} from "@/components/pages/home";
 import CardRowCard from "@/components/ui/card/CardRowCard";
 
 function Credit() {
@@ -18,7 +18,7 @@ function Credit() {
         <div className='flex flex-col gap-5'>
           <p className='text-primary-200 text-xl'>Card Expense Statistics</p>
           <div className="bg-white p-6 overflow-hidden rounded-lg">
-            <PieChart />
+            <ExpenseChart />
           </div>
         </div>
         <div className='col-span-1 lg:col-span-2 flex flex-col gap-5'>
