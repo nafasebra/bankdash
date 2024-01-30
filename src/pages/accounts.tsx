@@ -8,9 +8,12 @@ import {
 import Body from "@/components/layout/Body";
 import IconCard from "@/components/ui/card/IconCard";
 import CreditCard from "@/components/ui/card/CreditCard";
-import LastTransactionTable from "@/components/ui/table/LastTransactionTable";
-import InvoicesSentTable from "@/components/ui/table/InvoicesSentTable";
-import DebitCreditCard from "@/components/ui/card/DebitCreditCard";
+import {
+  LastTransactionTable,
+  InvoicesSentTable,
+  DebitCreditCard,
+} from "@/components/pages/account";
+import SectionWithTitle from "@/components/pages/SectionWithTitle";
 
 function Accounts() {
   return (
@@ -50,27 +53,28 @@ function Accounts() {
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <div className='col-span-1 lg:col-span-2 flex flex-col gap-5'>
-          <p className='text-primary-200 text-xl'>Last Transaction</p>
-          <LastTransactionTable />
+        <div className="col-span-1 lg:col-span-2 flex flex-col gap-5">
+          <SectionWithTitle title="Last Transaction" container={false}>
+            <LastTransactionTable />
+          </SectionWithTitle>
         </div>
-        <div className='flex flex-col gap-5'>
+        <div className="flex flex-col gap-5">
           <div className="flex items-center justify-between">
-            <p className='text-primary-200 text-xl'>My Card</p>
-            <p className='text-primary-200 text-lg'>See all</p>
+            <p className="text-primary-200 text-xl">My Card</p>
+            <p className="text-primary-200 text-lg">See all</p>
           </div>
-          <CreditCard theme='blue' />
+          <CreditCard theme="blue" />
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <div className='col-span-1 lg:col-span-2 flex flex-col gap-5'>
-          <p className='text-primary-200 text-xl'>Debit & Credit Overview</p>
-          <DebitCreditCard />
+        <div className="col-span-1 lg:col-span-2 flex flex-col gap-5">
+          <SectionWithTitle title="Debit & Credit Overview">
+            <DebitCreditCard />
+          </SectionWithTitle>
         </div>
-        <div className='flex flex-col gap-5'>
-          <p className='text-primary-200 text-xl'>Invoices Sent</p>
+        <SectionWithTitle title="Invoices Sent">
           <InvoicesSentTable />
-        </div>
+        </SectionWithTitle>
       </div>
     </Body>
   );
