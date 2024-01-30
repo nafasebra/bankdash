@@ -3,7 +3,7 @@ import Body from "@/components/layout/Body";
 import { BagIcon, LifeIcon, SafeIcon } from "@/assets/icons";
 import IconCard from "@/components/ui/card/IconCard";
 import SectionWithTitle from "@/components/pages/SectionWithTitle";
-import RowCard from "@/components/ui/card/RowCard";
+import { ServiceTable } from "@/components/pages/service";
 
 function Services() {
   return (
@@ -34,15 +34,8 @@ function Services() {
           reverse={false}
         />
       </div>
-      <SectionWithTitle title="Bank Services List">
-        <div className="overflow-x-hidden">
-          <div className="overflow-x-auto space-y-3">
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
-          </div>
-        </div>
+      <SectionWithTitle title="Bank Services List" container={false}>
+        <ServiceTable />
       </SectionWithTitle>
     </Body>
   );

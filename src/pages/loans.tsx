@@ -7,7 +7,7 @@ import {
   Settings2Icon,
 } from "@/assets/icons";
 import IconCard from "@/components/ui/card/IconCard";
-import LoanTable from "@/components/ui/table/LoanTable";
+import LoanTable from "@/components/pages/loans/LoanTable";
 import SectionWithTitle from "@/components/pages/SectionWithTitle";
 
 function Loans() {
