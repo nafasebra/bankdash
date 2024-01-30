@@ -4,14 +4,14 @@ function PreferenceSetting() {
   return (
     <div className='space-y-5 pt-5'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-        <div className="space-y-3">
-          <label htmlFor="">Currency</label>
-          <Input placeholder="USD" />
-        </div>
-        <div className="space-y-3">
-          <label htmlFor="">Time Zone</label>
-          <Input placeholder="(GMT-12:00) International Date Line West" />
-        </div>
+        <FormControl>
+          <FormLabel htmlFor="currency">Currency</FormLabel>
+          <Input placeholder="USD" id='currency' />
+        </FormControl>
+        <FormControl className="space-y-3">
+          <FormLabel htmlFor="timeZone">Time Zone</FormLabel>
+          <Input placeholder="(GMT-12:00) International Date Line West" id='timeZone' />
+        </FormControl>
       </div>
       <div className='space-y-3'>
         <p>Notification</p>

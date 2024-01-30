@@ -16,7 +16,7 @@ import {
 function Setting() {
   return (
     <Body pageName={linkEnum.Setting}>
-      <div className="bg-white rounded-lg p-8 overflow-hidden space-y-5">
+      <div className="bg-white rounded-lg p-6 overflow-hidden space-y-5">
         <Tabs position="relative" variant="unstyled">
           <TabList>
             <Tab

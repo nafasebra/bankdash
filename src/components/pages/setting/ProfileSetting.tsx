@@ -1,4 +1,4 @@
-import { Input } from "@chakra-ui/react";
+import { FormControl, FormLabel, Input } from "@chakra-ui/react";
 import avatar from "@/assets/images/avatar.png";
 import { PencilIcon } from "@/assets/icons";
 
@@ -23,49 +23,52 @@ function ProfileSetting() {
       </div>
       <div className="w-full md:w-[calc(100%-200px-2rem)] space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <div className="space-y-3">
-            <label htmlFor="">Your Name</label>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">Your Name</FormLabel>
             <Input placeholder="Charlene Reed" />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">User Name</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">User Name</FormLabel>
             <Input placeholder="Charlene Reed " />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">Email</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">Email</FormLabel>
             <Input placeholder="charlenereed@gmail.com  " />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">Password</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">Password</FormLabel>
             <Input placeholder="******" />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">Date of Birth</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">Date of Birth</FormLabel>
             <Input
               placeholder="Select Date and Time"
               type="datetime-local"
             />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">Present Address</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">Present Address</FormLabel>
             <Input placeholder="San Jose, California, USA" />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">Permanent Address</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">Permanent Address</FormLabel>
             <Input placeholder="San Jose, California, USA" />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">City</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">City</FormLabel>
             <Input placeholder="San Jose" />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">Postal Code</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            {/* lint stage */}
+            {/* eol */}
+            
+            <FormLabel htmlFor="">Postal Code</FormLabel>
             <Input placeholder="45962" />
-          </div>
-          <div className="space-y-3">
-            <label htmlFor="">Country</label>
+          </FormControl>
+          <FormControl className="space-y-3">
+            <FormLabel htmlFor="">Country</FormLabel>
             <Input placeholder="USA" />
-          </div>
+          </FormControl>
         </div>
       </div>
     </div>
