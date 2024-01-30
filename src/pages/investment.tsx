@@ -3,10 +3,7 @@ import Body from "@/components/layout/Body";
 import IconCard from "@/components/ui/card/IconCard";
 import { CoinPackIcon, PieChartIcon, ReturnIcon } from "@/assets/icons";
 import SectionWithTitle from "@/components/pages/SectionWithTitle";
-import InvestmentChart from "@/components/pages/investment/InvestmentChart";
-import RevenueChart from "@/components/pages/investment/RevenueChart";
-import InvestmentTable from "@/components/pages/investment/InvestmentTable";
-import TrendingTable from "@/components/pages/investment/TrendingTable";
+import {InvestmentChart, RevenueChart, InvestmentTable, TrendingTable} from "@/components/pages/investment";
 
 function Investment() {
   return (

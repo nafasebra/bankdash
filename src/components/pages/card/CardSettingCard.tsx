@@ -2,7 +2,7 @@ import { AppleIcon, CashOIcon, GoogleIcon, LockIcon } from '@/assets/icons'
 
 function CardSettingCard() {
   return (
-    <ul className="bg-white rounded-xl overflow-hidden text-primary-200 p-6 space-y-6">
+    <ul className="text-primary-200 space-y-6">
       <li className="flex items-center gap-3">
         <div className="w-[55px] h-[55px] flex items-center justify-center bg-yellow/20 text-yellow rounded-2xl">
           <div className="w-6 h-6">
