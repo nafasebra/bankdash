@@ -39,24 +39,20 @@ function Investment() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <SectionWithTitle title="Yearly Total Investment">
-          <div className="bg-white p-6 overflow-hidden rounded-lg">
-            <InvestmentChart />
-          </div>
+          <InvestmentChart />
         </SectionWithTitle>
         <SectionWithTitle title="Monthly Revenue">
-          <div className="bg-white p-6 overflow-hidden rounded-lg">
-            <RevenueChart />
-          </div>
+          <RevenueChart />
         </SectionWithTitle>
       </div>
       <div className="flex flex-col lg:flex-row gap-5">
         <div className="w-full lg:w-[65%] flex flex-col gap-5">
-          <SectionWithTitle title="My Investment">
+          <SectionWithTitle title="My Investment" container={false}>
             <InvestmentTable />
           </SectionWithTitle>
         </div>
         <div className="w-full lg:w-[35%] flex flex-col gap-5">
-          <SectionWithTitle title="Trending Stock">
+          <SectionWithTitle title="Trending Stock" container={false}>
             <TrendingTable />
           </SectionWithTitle>
         </div>
