@@ -20,7 +20,7 @@ function SliderCard() {
   }
 
   return (
-    <div className="bg-white rounded-xl overflow-hidden">
+    <>
       <Swiper slidesPerView={3.5}>
         {Array.from({ length: 4 }).map((_, index) => (
           <SwiperSlide
@@ -44,7 +44,7 @@ function SliderCard() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pb-3">
         <p className="text-sm text-primary-400 flex items-center">Write amount</p>
         <form className="col-span-1 md:col-span-2" onSubmit={handleSubmit}>
           <div className="relative">
@@ -64,7 +64,7 @@ function SliderCard() {
           </div>
         </form>
       </div>
-    </div>
+    </>
   );
 }
 

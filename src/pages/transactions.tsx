@@ -24,7 +24,7 @@ function Transactions() {
           <ExpenseChart />
         </SectionWithTitle>
       </div>
-      <SectionWithTitle title="Weekly Activity">
+      <SectionWithTitle title="Weekly Activity" container={false}>
         <WeeklyTabbar />
       </SectionWithTitle>
     </Body>

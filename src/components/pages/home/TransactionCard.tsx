@@ -2,7 +2,7 @@ import { CardIcon, CoinIcon, PaypalIcon } from "@/assets/icons";
 
 function TransactionCard() {
   return (
-    <ul className="bg-white rounded-xl overflow-hidden text-primary-200 p-5 space-y-4">
+    <ul className="text-primary-200 space-y-4">
       <li className="flex items-center gap-3">
         <div className="w-[55px] h-[55px] flex items-center justify-center bg-yellow/20 text-yellow rounded-full">
           <CardIcon />

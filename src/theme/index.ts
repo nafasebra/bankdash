@@ -4,6 +4,7 @@ import { Button } from './button';
 import { Input } from './input';
 import { Switch } from './switch';
 import { Popover } from './popover';
+import { Card } from './card';
 
 export const theme = extendTheme({
   colors: colors,
@@ -11,6 +12,7 @@ export const theme = extendTheme({
     Button,
     Input,
     Switch,
-    Popover
+    Popover,
+    Card
   }
 });
