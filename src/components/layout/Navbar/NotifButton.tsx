@@ -44,7 +44,7 @@ function NotifButton() {
   };
 
   return (
-    <>
+    <div className="hidden md:flex">
       <Popover>
         <PopoverTrigger>
           <Button variant="light" color="magenta">
@@ -93,7 +93,7 @@ function NotifButton() {
           </PopoverContent>
         </Portal>
       </Popover>
-    </>
+    </div>
   );
 }
 

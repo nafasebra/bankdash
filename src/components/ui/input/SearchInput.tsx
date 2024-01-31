@@ -2,11 +2,12 @@ import { SearchIcon } from "@/assets/icons";
 import { FormEvent, useState } from "react";
 
 interface SearchProps {
+  className?: string;
   handleSubmit: (value: string) => void;
 }
 
 function SearchInput(props: SearchProps) {
-  const { handleSubmit } = props;
+  const { handleSubmit, className } = props;
   const [value, setValue] = useState<string>("");
 
   const handleSubmitMain = (event: FormEvent) => {
@@ -16,10 +17,10 @@ function SearchInput(props: SearchProps) {
   };
 
   return (
-    <form onSubmit={handleSubmitMain} className="relative">
+    <form onSubmit={handleSubmitMain} className={`relative ${className || ""}`}>
       <input
         type="text"
-        className="w-[250px] h-[50px] rounded-full bg-light py-3 pl-14 pr-4 text-primary-400 outline-none focus:bg-white focus-visible:bg-white transition-colors"
+        className="w-full h-[50px] rounded-full bg-light py-3 pl-14 pr-4 text-primary-400 outline-none focus:bg-white focus-visible:bg-white transition-colors"
         placeholder="Search for something"
         value={value}
         onChange={(e) => setValue(e.target.value)}
