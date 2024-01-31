@@ -44,7 +44,9 @@ const router = createHashRouter([
     path: "/setting",
     element: <Setting />,
   },
-]);
+], {
+  basename: '.'
+});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
