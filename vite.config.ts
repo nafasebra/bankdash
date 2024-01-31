@@ -11,5 +11,5 @@ export default defineConfig({
       '@/': '/src/'
     },
   },
-  base: '/matnsaazz/',
+  base: '/bankdash-dashboard/',
 })
