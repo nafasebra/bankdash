@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "@/pages/home";
 import Transactions from "@/pages/transactions";
 import Accounts from "@/pages/accounts";
@@ -11,7 +11,7 @@ import Setting from "@/pages/setting";
 import Investment from "@/pages/investment";
 import "@/styles/main.scss";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -44,9 +44,7 @@ const router = createHashRouter([
     path: "/setting",
     element: <Setting />,
   },
-], {
-  basename: '.'
-});
+]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
