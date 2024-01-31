@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "@/pages/home";
 import Transactions from "@/pages/transactions";
 import Accounts from "@/pages/accounts";
@@ -11,7 +11,7 @@ import Setting from "@/pages/setting";
 import Investment from "@/pages/investment";
 import "@/styles/main.scss";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
