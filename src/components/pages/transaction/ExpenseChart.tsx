@@ -57,8 +57,8 @@ const data = {
     {
       label: 'Dataset 1',
       data: labels.map(() => faker.number.int({ min: 200, max: 500 })),
-      backgroundColor: (color) => {
-        let colors = color?.index === 4 ? "#16DBCC" : "#EDF0F7"
+      backgroundColor: (color: any) => {
+        const colors = color?.index === 4 ? "#16DBCC" : "#EDF0F7"
         return colors;
       },
       borderRadius: 10,

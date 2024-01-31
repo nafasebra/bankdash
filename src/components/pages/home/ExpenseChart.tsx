@@ -23,23 +23,17 @@ const data = {
 };
 
 const options = {
-  title: {
-    display: false,
-  },
-  legend: {
-    display: false,
-  },
-  tooltips: {
-    enabled: true,
-    callbacks: {
-      title: function(tooltipItems, data) {
-        return data.labels[tooltipItems[0].index];
-      },
-      body: function(tooltipItem, data) {
-        return data.datasets[0].data[tooltipItem.index] + '%';
-      },
+  plugins: {
+    title: {
+      display: false,
     },
-  },
+    legend: {
+      display: false,
+    },
+    tooltip: {
+      enabled: true,
+    },
+  }
 };
 
 function ExpenseChart() {
