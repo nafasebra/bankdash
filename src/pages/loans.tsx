@@ -13,7 +13,7 @@ import SectionWithTitle from "@/components/pages/SectionWithTitle";
 function Loans() {
   return (
     <Body pageName={linkEnum.Loans}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5">
         <IconCard
           icon={<AccountIcon />}
           supTitle="Personal Loans"

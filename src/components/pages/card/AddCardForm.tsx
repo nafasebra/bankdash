@@ -42,7 +42,7 @@ function AddCardForm() {
           <Input placeholder="**** **** **** ****" type="datetime-local" />
         </div>
       </div>
-      <div className='flex flex-col w-[150px]'>
+      <div className='flex flex-col w-full md:w-[150px]'>
         <Button>Add card</Button>
       </div>
     </form>

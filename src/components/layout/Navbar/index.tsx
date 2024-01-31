@@ -21,7 +21,7 @@ function Navbar(props: NavbarProps) {
   return (
     <nav className="bg-white px-8 py-4 space-y-4">
       <div className="flex items-center justify-between gap-10">
-        <button className="w-10 h-10 flex items-center justify-center text-black">
+        <button className="w-10 h-10 flex md:hidden items-center justify-center text-black">
           <MenuIcon />
         </button>
         <p className="text-xl font-semibold text-primary-200">{pageName}</p>

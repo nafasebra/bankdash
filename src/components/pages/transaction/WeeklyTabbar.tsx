@@ -38,13 +38,13 @@ function WeeklyTabbar() {
         bg="primary.100"
       />
       <TabPanels>
-        <TabPanel>
+        <TabPanel pb={0} px={0}>
           <TransactionTable />
         </TabPanel>
-        <TabPanel>
+        <TabPanel pb={0} px={0}>
           <TransactionTable />
         </TabPanel>
-        <TabPanel>
+        <TabPanel pb={0} px={0}>
           <TransactionTable />
         </TabPanel>
       </TabPanels>

@@ -57,7 +57,7 @@ function Setting() {
           </TabPanels>
         </Tabs>
         <div className="flex justify-end">
-          <div className="flex flex-col w-[150px]">
+          <div className="flex flex-col w-full md:w-[150px]">
             <Button>Save</Button>
           </div>
         </div>

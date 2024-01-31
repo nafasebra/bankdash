@@ -52,7 +52,7 @@ function Accounts() {
           reverse
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-x-5">
         <div className="col-span-1 lg:col-span-2 flex flex-col gap-5">
           <SectionWithTitle title="Last Transaction" container={false}>
             <LastTransactionTable />
@@ -66,7 +66,7 @@ function Accounts() {
           <CreditCard theme="blue" />
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-x-5">
         <div className="col-span-1 lg:col-span-2 flex flex-col gap-5">
           <SectionWithTitle title="Debit & Credit Overview">
             <DebitCreditCard />

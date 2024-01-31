@@ -13,7 +13,7 @@ import SectionWithTitle from "@/components/pages/SectionWithTitle";
 function Home() {
   return (
     <Body pageName={linkEnum.Dashboard}>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-x-5">
         <div className="col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div className="grid grid-cols-2 col-span-1 lg:col-span-2">
             <p className="flex items-center text-2xl font-semibold text-primary-200">
@@ -32,7 +32,7 @@ function Home() {
           </SectionWithTitle>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-x-5">
         <div className="col-span-1 lg:col-span-2 space-y-4">
           <SectionWithTitle title="Weekly Activity">
             <WeeklyChart />
