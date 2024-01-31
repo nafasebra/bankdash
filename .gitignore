@@ -25,3 +25,6 @@ dist-ssr
 
 # lock files
 yarn.lock
+
+# Local Netlify folder
+.netlify
