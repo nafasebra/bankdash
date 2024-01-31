@@ -1,8 +1,8 @@
-import CreditChart from "@/components/ui/chart/CreditChart";
+import CreditChart from "./CreditChart";
 
 function DebitCreditCard() {
   return (
-    <div className="bg-white overflow-hidden p-6 space-y-6 rounded-lg">
+    <>
       <div className="flex items-center justify-between gap-3">
         <p className="text-primary-400">
           <span className="text-primary-200">$7,560</span> Debited &{" "}
@@ -20,7 +20,7 @@ function DebitCreditCard() {
         </div>
       </div>
       <CreditChart />
-    </div>
+    </>
   );
 }
 

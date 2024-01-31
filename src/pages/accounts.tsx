@@ -72,7 +72,7 @@ function Accounts() {
             <DebitCreditCard />
           </SectionWithTitle>
         </div>
-        <SectionWithTitle title="Invoices Sent">
+        <SectionWithTitle title="Invoices Sent" container={false}>
           <InvoicesSentTable />
         </SectionWithTitle>
       </div>
