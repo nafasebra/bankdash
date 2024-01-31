@@ -21,7 +21,11 @@ function SliderCard() {
 
   return (
     <>
-      <Swiper slidesPerView={3.5}>
+      <Swiper slidesPerView={2.5} breakpoints={{
+        md: {
+          slidesPerView: 3.5
+        }
+      }}>
         {Array.from({ length: 4 }).map((_, index) => (
           <SwiperSlide
             key={index}

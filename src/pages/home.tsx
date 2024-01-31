@@ -42,13 +42,13 @@ function Home() {
           <ExpenseChart />
         </SectionWithTitle>
       </div>
-      <div className="flex gap-5">
-        <div className="w-[40%] basis-[40%] space-y-4">
+      <div className="flex flex-col lg:flex-row gap-5">
+        <div className="w-full basis-full lg:w-[40%] lg:basis-[40%] space-y-4">
           <SectionWithTitle title="Quick Transfer">
             <SliderCard />
           </SectionWithTitle>
         </div>
-        <div className="w-[60%] basis-[60%] space-y-4">
+        <div className="w-full basis-full lg:w-[60%] lg:basis-[60%] space-y-4">
           <SectionWithTitle title="Balance History">
             <BalanceChart />
           </SectionWithTitle>
