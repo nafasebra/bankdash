@@ -11,6 +11,8 @@ import Setting from "@/pages/setting";
 import Investment from "@/pages/investment";
 import "@/styles/main.scss";
 
+// TODO: Hnadle routing sytstme to /router folder
+
 const router = createBrowserRouter([
   {
     path: "/",

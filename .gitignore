@@ -23,8 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# lock files
-yarn.lock
-
 # Local Netlify folder
 .netlify
