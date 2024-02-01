@@ -1,0 +1,51 @@
+import React from "react";
+import { CloseIcon } from "@/assets/icons";
+import { menuLinks } from "../Sidebar";
+import { linkEnum } from "@/types/enums/link";
+import { Link } from "react-router-dom";
+
+interface SidebarProps {
+  active: linkEnum;
+  show: boolean;
+  handleClose: () => void;
+}
+
+function MobileSidebar(props: SidebarProps) {
+  const { active, handleClose, show } = props;
+
+  return (
+    <aside
+      className={`${
+        show ? "translate-x-0" : "-translate-x-[100%]"
+      } bg-white  fixed left-0 top-0 bottom-0 transition-transform flex md:hidden flex-col gap-10 py-7 w-[300px]`}
+    >
+      <button
+        className="absolute top-0 right-0 w-20 h-20 flex items-center justify-center"
+        onClick={handleClose}
+      >
+        <div className="w-8 h-8 flex items-center">
+          <CloseIcon />
+        </div>
+      </button>
+      <div className="px-6">
+        <img src="/logo.png" className="w-[150px]" />
+      </div>
+      <ul className="flex flex-col gap-2">
+        {menuLinks.map((menu) => (
+          <li key={menu.id} className="relative">
+            <div className={`${menu.title === active ? "block" : "hidden"} absolute bg-primary-100 top-0 bottom-0 left-0 w-2 rounded-r-2xl h-full`}></div>
+            <Link
+              to={menu.link}
+              className={`flex items-center gap-6 py-3 px-6 relative ${menu.title === active ? "text-primary-100" : "text-primary-200/60"} hover:text-primary-100 transition-all`}
+            >
+              <div className="w-5 h-5 flex items-center">{menu.icon}</div>
+              <p>{menu.title}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+}
+
+export default MobileSidebar;

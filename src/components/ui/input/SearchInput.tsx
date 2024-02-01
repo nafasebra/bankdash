@@ -12,7 +12,6 @@ function SearchInput(props: SearchProps) {
 
   const handleSubmitMain = (event: FormEvent) => {
     event.preventDefault();
-    console.log(event);
     handleSubmit(value);
   };
 
