@@ -1,6 +1,6 @@
 import React from "react";
 import { CloseIcon } from "@/assets/icons";
-import { menuLinks } from "../Sidebar";
+import { menuLinks } from "@/types/data/link";
 import { linkEnum } from "@/types/enums/link";
 import { Link } from "react-router-dom";
 
