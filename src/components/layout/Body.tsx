@@ -21,9 +21,9 @@ function Body(props: BodyProps) {
   return (
     <ChakraProvider theme={theme}>
       <section className="min-h-screen w-full flex">
-        <Sidebar active={pageName} />
+        <Sidebar />
         <main className="w-full md:w-[calc(100%-300px)]">
-          <Navbar pageName={pageName} />
+          <Navbar />
           <section className="bg-light p-7 space-y-6 min-h-[calc(100vh-100px)]">
             {children}
           </section>
