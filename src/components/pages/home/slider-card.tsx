@@ -3,6 +3,7 @@ import "swiper/css";
 import avatar from "@/assets/images/avatar-1.png";
 import { FormEvent, useState } from "react";
 import { SendIcon } from "@/assets/icons";
+import { Button, Input, Stack, Grid, GridItem } from "@chakra-ui/react";
 
 function SliderCard() {
   const [tab, setTab] = useState(0);
@@ -21,7 +22,7 @@ function SliderCard() {
 
   return (
     <>
-      <Swiper slidesPerView={2.5} breakpoints={{
+      <Swiper className="h-[145px]" slidesPerView={2.5} breakpoints={{
         md: {
           slidesPerView: 3.5
         }
@@ -37,10 +38,10 @@ function SliderCard() {
                 <img src={avatar} className="w-full h-full object-cover" />
               </div>
               <div
-                className={`text-center ${index === tab ? "font-bold" : ""}`}
+                className={`flex flex-col text-center ${index === tab ? "font-bold" : ""}`}
               >
-                <p className="text-center leading-0">Randy Press</p>
-                <p className="text-primary-400 text-center leading-0">
+                <p className="text-center">Randy Press</p>
+                <p className="text-primary-400 text-center">
                   Director
                 </p>
               </div>
@@ -51,21 +52,28 @@ function SliderCard() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pb-3">
         <p className="text-sm text-primary-400 flex items-center">Write amount</p>
         <form className="col-span-1 md:col-span-2" onSubmit={handleSubmit}>
-          <div className="relative">
-            <input
-              type="number"
-              value={amount}
-              onChange={(event) => setAmount(event.target.value)}
-              className="h-[50px] rounded-full bg-light py-3 px-4 text-primary-400 outline-none focus:bg-white focus-visible:bg-white transition-colors"
-              placeholder="252.22"
-            />
-            <button type="submit" className="bg-primary py-3 px-4 h-[50px] text-white flex items-center gap-2 justify-center absolute right-0 top-0 bottom-0 rounded-full">
-              <p>Send</p>
-              <div className="w-5 h-5 flex items-center">
-                <SendIcon />
-              </div>
-            </button>
-          </div>
+          <Grid templateColumns="repeat(3, 1fr)" gap={3} alignItems="center">
+            <GridItem colSpan={2}>
+              <Input
+                type="number"
+                value={amount}
+                onChange={(event) => setAmount(event.target.value)}
+                variant={"custom"}
+                placeholder="252.22"
+              />
+            </GridItem>
+
+            <GridItem colSpan={1}>
+              <Button type="submit" w="full">
+                <Stack direction="row" spacing={2} align="center" justify="center">
+                  <span>Send</span>
+                  <div className="w-5 h-5">
+                    <SendIcon />
+                  </div>
+                </Stack>
+              </Button>
+            </GridItem>
+          </Grid>
         </form>
       </div>
     </>

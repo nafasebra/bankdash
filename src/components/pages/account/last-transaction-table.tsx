@@ -3,10 +3,10 @@ import { RenewIcon } from "@/assets/icons";
 function LastTransactionTable() {
   return (
     <div className="overflow-hidden">
-      <ul className="min-w-full bg-white rounded-xl overflow-x-auto text-primary-200 p-5 space-y-4">
+      <div className="min-w-full bg-white rounded-xl overflow-x-auto text-primary-200 p-5 space-y-4">
         {
           Array.from({length: 4}).map((_, index) => (
-            <li key={index} className="min-w-[600px] flex items-center justify-between gap-3">
+            <div key={index} className="min-w-[600px] flex items-center justify-between gap-3">
               <div className="w-[55px] h-[55px] basis-[55px] flex items-center justify-center bg-cyan/20 text-cyan rounded-2xl">
                 <div className="w-6 h-6">
                   <RenewIcon />
@@ -20,10 +20,10 @@ function LastTransactionTable() {
               <p className="w-[70px] basis-[70px] text-primary-400">1234 ****</p>
               <p className="w-[70px] basis-[70px] text-primary-400">Pending</p>
               <p className="w-[70px] basis-[70px] text-magenta">-$150</p>
-            </li>
+            </div>
           ))
         }
-      </ul>
+      </div>
     </div>
   );
 }

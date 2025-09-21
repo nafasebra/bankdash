@@ -1,8 +1,8 @@
-import { linkEnum } from "@/types/enums/link";
-import Body from "@/components/layout/Body";
-import IconCard from "@/components/ui/card/IconCard";
+import { linkEnum } from "@/enums/link";
+import Body from "@/components/layout/body";
+import IconCard from "@/components/ui/card/icon-card";
 import { CoinPackIcon, PieChartIcon, ReturnIcon } from "@/assets/icons";
-import SectionWithTitle from "@/components/pages/SectionWithTitle";
+import SectionWithTitle from "@/components/pages/section-with-title";
 import {InvestmentChart, RevenueChart, InvestmentTable, TrendingTable} from "@/components/pages/investment";
 
 function Investment() {

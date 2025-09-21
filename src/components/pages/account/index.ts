@@ -1,3 +1,3 @@
-export { default as LastTransactionTable } from "./LastTransactionTable";
-export { default as DebitCreditCard } from "./DebitCreditCard";
-export { default as InvoicesSentTable } from "./InvoicesSentTable";
+export { default as LastTransactionTable } from "./last-transaction-table";
+export { default as DebitCreditCard } from "./debit-credit-card";
+export { default as InvoicesSentTable } from "./invoices-sent-table";

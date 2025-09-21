@@ -1,3 +1,3 @@
-export { default as WeeklyTabbar } from "./WeeklyTabbar";
-export { default as TransactionTable } from "./TransactionTable";
-export { default as ExpenseChart } from "./ExpenseChart";
+export { default as WeeklyTabbar } from "./weekly-table";
+export { default as TransactionTable } from "./transaction-table";
+export { default as ExpenseChart } from "./expense-chart";

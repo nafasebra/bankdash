@@ -1,13 +1,13 @@
-import { linkEnum } from "@/types/enums/link";
-import Body from "@/components/layout/Body";
-import CreditCard from "@/components/ui/card/CreditCard";
+import { linkEnum } from "@/enums/link";
+import Body from "@/components/layout/body";
+import CreditCard from "@/components/ui/card/credit-card";
 import {
   AddCardForm,
   CardSettingCard,
   CardListContainer,
 } from "@/components/pages/card"; 
 import { ExpenseChart } from "@/components/pages/home";
-import SectionWithTitle from "@/components/pages/SectionWithTitle";
+import SectionWithTitle from "@/components/pages/section-with-title";
 
 function Credit() {
   return (
@@ -32,12 +32,14 @@ function Credit() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-x-5">
         <div className="col-span-1 lg:col-span-2 flex flex-col gap-5">
           <SectionWithTitle title="Card List">
-            <p className="text-primary-400 leading-7">
-              Credit Card generally means a plastic card issued by Scheduled
-              Commercial Banks assigned to a Cardholder, with a credit limit,
-              that can be used to purchase goods and services on credit or
-              obtain cash advances.
-            </p>
+            <div className="pb-4">
+              <p className="text-primary-400 leading-7">
+                Credit Card generally means a plastic card issued by Scheduled
+                Commercial Banks assigned to a Cardholder, with a credit limit,
+                that can be used to purchase goods and services on credit or
+                obtain cash advances.
+              </p>
+            </div>
             <AddCardForm />
           </SectionWithTitle>
         </div>

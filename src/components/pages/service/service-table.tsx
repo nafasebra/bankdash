@@ -14,21 +14,21 @@ function ServiceTable() {
                   </div>
                 </div>
                 <div className="text-lg flex flex-col whitespace-nowrap">
-                  <p className="text-black leading-0">It is a long established </p>
-                  <p className="text-primary-400 leading-0">Business loans</p>
+                  <p className="text-black leading-none">It is a long established </p>
+                  <p className="text-primary-400 leading-none">Business loans</p>
                 </div>
               </div>
               <div className="text-lg flex flex-col whitespace-nowrap">
-                <p className="text-black leading-0">It is a long established </p>
-                <p className="text-primary-400 leading-0">Business loans</p>
+                <p className="text-black leading-none">It is a long established </p>
+                <p className="text-primary-400 leading-none">Business loans</p>
               </div>
               <div className="text-lg flex flex-col whitespace-nowrap">
-                <p className="text-black leading-0">It is a long established </p>
-                <p className="text-primary-400 leading-0">Business loans</p>
+                <p className="text-black leading-none">It is a long established </p>
+                <p className="text-primary-400 leading-none">Business loans</p>
               </div>
               <div className="text-lg flex flex-col whitespace-nowrap">
-                <p className="text-black leading-0">It is a long established </p>
-                <p className="text-primary-400 leading-0">Business loans</p>
+                <p className="text-black leading-none">It is a long established </p>
+                <p className="text-primary-400 leading-none">Business loans</p>
               </div>
               <a href="#" className="w-[150px] flex items-center justify-center py-2 px-4 rounded-full border-2 border-primary-400 text-primary-400 text-center text-lg">View details</a>
             </li>

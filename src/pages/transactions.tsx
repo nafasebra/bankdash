@@ -1,8 +1,8 @@
-import { linkEnum } from "@/types/enums/link";
-import Body from "@/components/layout/Body";
-import CreditCard from "@/components/ui/card/CreditCard";
+import { linkEnum } from "@/enums/link";
+import Body from "@/components/layout/body";
+import CreditCard from "@/components/ui/card/credit-card";
 import { ExpenseChart, WeeklyTabbar } from "@/components/pages/transaction";
-import SectionWithTitle from "@/components/pages/SectionWithTitle";
+import SectionWithTitle from "@/components/pages/section-with-title";
 
 function Transactions() {
   return (

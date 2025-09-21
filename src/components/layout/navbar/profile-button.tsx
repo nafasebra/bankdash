@@ -34,8 +34,8 @@ function ProfileButton() {
                 />
               </div>
               <div className="w-[calc(100%-3rem)]">
-                <p className="leading-0">Nafas Ebrahimi</p>
-                <p className="text-primary-400 text-sm leading-0">Online</p>
+                <p className="leading-none">Nafas Ebrahimi</p>
+                <p className="text-primary-400 text-sm leading-none">Online</p>
               </div>
             </div>
           </PopoverHeader>

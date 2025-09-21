@@ -11,36 +11,20 @@ import {
   Portal,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { Notification } from "@/types/notification";
+import { notificationData } from "@/data/notification";
 
-const notifData = [
-  {
-    id: 1,
-    title: "New update",
-    date: "16 hours ago",
-  },
-  {
-    id: 2,
-    title: "New update",
-    date: "20 hours ago",
-  },
-  {
-    id: 3,
-    title: "New update",
-    date: "1 days ago",
-  },
-];
+function NotificationButton() {
+  const [notification, setNotification] = useState<Notification[]>(notificationData);
 
-function NotifButton() {
-  const [notif, setNotif] = useState(notifData);
-
-  const readNotif = (index: number) => {
-    setNotif(() => {
-      return [...notif.filter((item) => item.id !== index)];
+  const readNotification = (index: number) => {
+    setNotification(() => {
+      return [...notification.filter((item) => item.id !== index)];
     });
   };
 
-  const readAllNotif = () => {
-    setNotif([]);
+  const readAllNotification = () => {
+    setNotification([]);
   };
 
   return (
@@ -59,22 +43,22 @@ function NotifButton() {
             </PopoverHeader>
             <PopoverBody>
               <ul className="divide-y divide-light-200">
-                {notif.length ? (
-                  notif.map((notifItem) => (
+                {notification.length ? (
+                  notification.map((notificationItem: Notification) => (
                     <div
                       className="flex items-center justify-between gap-4 py-3"
-                      key={notifItem.id}
+                      key={notificationItem.id}
                     >
                       <div className="w-[calc(100%-2.5rem)] space-y-1">
-                        <p className="leading-0">{notifItem.title}</p>
-                        <p className="text-primary-400 text-sm leading-0">
-                          {notifItem.date}
+                        <p className="leading-none">{notificationItem.title}</p>
+                        <p className="text-primary-400 text-sm leading-none">
+                          {notificationItem.date}
                         </p>
                       </div>
                       <button
                         type="button"
                         className="w-6 h-6"
-                        onClick={() => readNotif(notifItem.id)}
+                        onClick={() => readNotification(notificationItem.id)}
                       >
                         <CloseIcon />
                       </button>
@@ -88,7 +72,7 @@ function NotifButton() {
               </ul>
             </PopoverBody>
             <PopoverFooter>
-              <button className="w-full text-center text-primary" onClick={readAllNotif}>View all notification</button>
+              <button className="w-full text-center text-primary" onClick={readAllNotification}>View all notification</button>
             </PopoverFooter>
           </PopoverContent>
         </Portal>
@@ -97,4 +81,4 @@ function NotifButton() {
   );
 }
 
-export default NotifButton;
+export default NotificationButton;

@@ -13,7 +13,7 @@ function PreferenceSetting() {
           <Input placeholder="(GMT-12:00) International Date Line West" id='timeZone' />
         </FormControl>
       </div>
-      <div className='space-y-3'>
+      <div className='flex flex-col gap-3'>
         <p>Notification</p>
         <div className='space-y-2'>
           <FormControl display='flex' alignItems='center' gap='10px'>

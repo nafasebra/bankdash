@@ -1,4 +1,5 @@
 import { SearchIcon } from "@/assets/icons";
+import { Button, Input } from "@chakra-ui/react";
 import { FormEvent, useState } from "react";
 
 interface SearchProps {
@@ -17,16 +18,16 @@ function SearchInput(props: SearchProps) {
 
   return (
     <form onSubmit={handleSubmitMain} className={`relative ${className || ""}`}>
-      <input
+      <Input
         type="text"
-        className="w-full h-[50px] rounded-full bg-light py-3 pl-14 pr-4 text-primary-400 outline-none focus:bg-white focus-visible:bg-white transition-colors"
+        variant={'search'}
         placeholder="Search for something"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button type="submit" className="bg-transparent rounded-full absolute top-0 left-0 bottom-0 h-full w-14 flex items-center justify-center text-primary-400">
+      <span className="bg-transparent rounded-full absolute top-0 left-0 bottom-0 h-full w-14 flex items-center justify-center text-primary-400">
         <SearchIcon />
-      </button>
+      </span>
     </form>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Sidebar from "@/components/layout/Sidebar";
-import Navbar from "@/components/layout/Navbar";
-import { linkEnum } from "@/types/enums/link";
+import Sidebar from "@/components/layout/sidebar";
+import Navbar from "@/components/layout/navbar";
+import { linkEnum } from "@/enums/link";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import { theme } from "@/theme";

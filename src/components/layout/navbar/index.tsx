@@ -1,13 +1,13 @@
-import SearchInput from "@/components/ui/input/SearchInput";
-import ProfileButton from "./ProfileButton";
-import NotifButton from "./NotifButton";
+import SearchInput from "@/components/ui/input/search-input";
+import ProfileButton from "./profile-button";
+import NotifButton from "./notif-button";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
 import { SettingOIcon } from "@/assets/icons";
 import { MenuIcon } from "@/assets/icons";
-import MobileSidebar from "./MobileSidebar";
+import MobileSidebar from "./mobile-sidebar";
 import { useState } from "react";
-import { menuLinks } from "@/types/data/link";
+import { menuLinks } from "@/data/link";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-white px-8 py-4 space-y-4">
+      <nav className="bg-white px-8 py-4">
         <div className="flex items-center justify-between gap-10">
           <button
             onClick={() => setShowMenu(true)}
@@ -32,14 +32,16 @@ function Navbar() {
             {menuLinks.filter((item) => item.link === locate.pathname)[0].title}
           </p>
           <div className="flex items-center gap-4">
-            <SearchInput
-              className="hidden md:flex w-[250px]"
-              handleSubmit={handleSubmit}
-            />
-            <div className="hidden md:flex">
-              <Button variant="light" onClick={() => navigate("/settings")}>
-                <SettingOIcon />
-              </Button>
+            <div className="hidden md:flex items-center gap-4 mt-4">
+              <SearchInput
+                className="flex w-[250px]"
+                handleSubmit={handleSubmit}
+              />
+              <div className="flex">
+                <Button variant="light" onClick={() => navigate("/settings")}>
+                  <SettingOIcon />
+                </Button>
+              </div>
             </div>
             <NotifButton />
             <ProfileButton />

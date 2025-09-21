@@ -16,21 +16,21 @@ function CardListContainer() {
                   </div>
                 </div>
                 <div className="flex flex-col whitespace-nowrap">
-                  <p className="text-black leading-0">Card Type </p>
-                  <p className="text-primary-400 leading-0">Secondary</p>
+                  <p className="text-black leading-none">Card Type </p>
+                  <p className="text-primary-400 leading-none">Secondary</p>
                 </div>
               </div>
               <div className="flex flex-col whitespace-nowrap">
-                <p className="text-black leading-0">Bank </p>
-                <p className="text-primary-400 leading-0">DBL Bank</p>
+                <p className="text-black leading-none">Bank </p>
+                <p className="text-primary-400 leading-none">DBL Bank</p>
               </div>
               <div className="flex flex-col whitespace-nowrap">
-                <p className="text-black leading-0">Card Number </p>
-                <p className="text-primary-400 leading-0">**** **** 5600</p>
+                <p className="text-black leading-none">Card Number </p>
+                <p className="text-primary-400 leading-none">**** **** 5600</p>
               </div>
               <div className="flex flex-col whitespace-nowrap">
-                <p className="text-black leading-0">Namain Card </p>
-                <p className="text-primary-400 leading-0">William </p>
+                <p className="text-black leading-none">Namain Card </p>
+                <p className="text-primary-400 leading-none">William </p>
               </div>
               <a href="#" className="w-[150px] text-primary text-center">
                 View details

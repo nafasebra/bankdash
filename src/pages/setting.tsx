@@ -1,8 +1,8 @@
-import { linkEnum } from "@/types/enums/link";
-import Body from "@/components/layout/Body";
-import ProfileSetting from "@/components/pages/setting/ProfileSetting";
-import PreferenceSetting from "@/components/pages/setting/PreferenceSetting";
-import SecuritySetting from "@/components/pages/setting/SecuritySetting";
+import { linkEnum } from "@/enums/link";
+import Body from "@/components/layout/body";
+import ProfileSetting from "@/components/pages/setting/profile-setting";
+import PreferenceSetting from "@/components/pages/setting/preference-setting";
+import SecuritySetting from "@/components/pages/setting/security-setting";
 import {
   Button,
   Tab,

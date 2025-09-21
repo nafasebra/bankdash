@@ -1,3 +1,3 @@
-export { default as CardSettingCard } from "./CardSettingCard";
-export { default as AddCardForm } from "./AddCardForm";
-export { default as CardListContainer } from "./CardListContainer";
+export { default as CardSettingCard } from "./card-setting-card";
+export { default as AddCardForm } from "./add-card-form";
+export { default as CardListContainer } from "./card-list-container";

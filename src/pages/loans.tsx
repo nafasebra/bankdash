@@ -1,14 +1,14 @@
-import { linkEnum } from "@/types/enums/link";
-import Body from "@/components/layout/Body";
+import { linkEnum } from "@/enums/link";
+import Body from "@/components/layout/body";
 import {
   AccountIcon,
   BarIcon,
   Service2nIcon,
   Settings2Icon,
 } from "@/assets/icons";
-import IconCard from "@/components/ui/card/IconCard";
-import LoanTable from "@/components/pages/loans/LoanTable";
-import SectionWithTitle from "@/components/pages/SectionWithTitle";
+import IconCard from "@/components/ui/card/icon-card";
+import LoanTable from "@/components/pages/loans/loan-table";
+import SectionWithTitle from "@/components/pages/section-with-title";
 
 function Loans() {
   return (

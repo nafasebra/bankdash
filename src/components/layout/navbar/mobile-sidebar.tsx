@@ -1,6 +1,6 @@
 import React from "react";
 import { CloseIcon } from "@/assets/icons";
-import { menuLinks } from "@/types/data/link";
+import { menuLinks } from "@/data/link";
 import { Link, useLocation } from "react-router-dom";
 
 interface SidebarProps {

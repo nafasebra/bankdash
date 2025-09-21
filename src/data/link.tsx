@@ -9,7 +9,7 @@ import {
   TransactionIcon,
 } from "@/assets/icons";
 import { linkEnum } from "../enums/link";
-import { menuLinkType } from "../link";
+import { menuLinkType } from "../types/link";
 
 export const menuLinks: menuLinkType[] = [
   {

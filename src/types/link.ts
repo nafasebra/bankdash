@@ -1,4 +1,4 @@
-export type menuLinkType = {
+export interface MenuLinkType {
   id: number;
   title: string;
   link: string;

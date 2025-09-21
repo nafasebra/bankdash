@@ -14,17 +14,17 @@ function InvestmentTable() {
                   </div>
                 </div>
                 <div className="text-lg flex flex-col whitespace-nowrap">
-                  <p className="text-black leading-0">Apple Store </p>
-                  <p className="text-primary-400 leading-0">E-commerce, Marketplace</p>
+                  <p className="text-black leading-none">Apple Store </p>
+                  <p className="text-primary-400 leading-none">E-commerce, Marketplace</p>
                 </div>
               </div>
               <div className="text-lg flex flex-col whitespace-nowrap">
-                <p className="text-black leading-0">$54,000 </p>
-                <p className="text-primary-400 leading-0">Envestment Value</p>
+                <p className="text-black leading-none">$54,000 </p>
+                <p className="text-primary-400 leading-none">Envestment Value</p>
               </div>
               <div className="text-lg flex flex-col whitespace-nowrap">
-                <p className="text-cyan leading-0">+16%</p>
-                <p className="text-primary-400 leading-0">Return Value</p>
+                <p className="text-cyan leading-none">+16%</p>
+                <p className="text-primary-400 leading-none">Return Value</p>
               </div>
             </li>
           ))

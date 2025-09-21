@@ -1,4 +1,4 @@
-import CreditChart from "./CreditChart";
+import CreditChart from "./credit-chart";
 
 function DebitCreditCard() {
   return (

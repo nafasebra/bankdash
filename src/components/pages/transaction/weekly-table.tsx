@@ -6,7 +6,7 @@ import {
   TabPanels,
   Tabs,
 } from "@chakra-ui/react";
-import TransactionTable from "./TransactionTable";
+import TransactionTable from "./transaction-table";
 
 function WeeklyTabbar() {
   return (
