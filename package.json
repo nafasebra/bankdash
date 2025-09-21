@@ -11,17 +11,16 @@
   },
   "packageManager": "yarn@1.22.21",
   "dependencies": {
+    "@babel/runtime": "^7.28.4",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@tailwindcss/vite": "^4.1.12",
-    "chart.js": "^4.4.1",
-    "chart.piecelabel.js": "^0.15.0",
     "framer-motion": "^10.18.0",
     "react": "^18.2.0",
-    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
+    "recharts": "^3.2.1",
     "swiper": "^11.0.5"
   },
   "devDependencies": {

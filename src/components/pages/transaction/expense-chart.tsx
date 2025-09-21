@@ -1,75 +1,33 @@
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import {faker} from '@faker-js/faker'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+import { faker } from '@faker-js/faker';
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+const data = [
+  { month: 'Aug', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'Sep', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'Oct', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'Nov', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'Dec', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'Jan', value: faker.number.int({ min: 200, max: 500 }) },
+];
 
-const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      display: false,
-      position: 'top' as const,
-    },
-    title: {
-      display: false,
-    },
-  },
-  scales: {
-    x: {
-      grid: {
-        drawBorder: false,
-        display: false
-      }
-    },
-    y: {
-      ticks: {
-        drawBorder: false,
-        display: false
-      },
-      grid: {
-        display: false
-      }
-    }
-  }
-};
-
-const labels = ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'];
-
-const data = {
-  labels,
-  datasets: [
-    {
-      label: 'Dataset 1',
-      data: labels.map(() => faker.number.int({ min: 200, max: 500 })),
-      backgroundColor: (color: any) => {
-        const colors = color?.index === 4 ? "#16DBCC" : "#EDF0F7"
-        return colors;
-      },
-      borderRadius: 10,
-      barPercentage: 0.75,
-      categoryPercentage: 1
-    }
-  ],
-};
+const colors = ['#EDF0F7', '#EDF0F7', '#EDF0F7', '#EDF0F7', '#16DBCC', '#EDF0F7'];
 
 function ExpenseChart() {
-  return <Bar height={200} options={options} data={data} />;
+  return (
+    <ResponsiveContainer width="100%" height={200}>
+      <BarChart data={data}>
+        <CartesianGrid strokeDasharray="2 4" stroke="rgba(52, 60, 106, 0.2)" />
+        <XAxis dataKey="month" />
+        <YAxis />
+        <Tooltip />
+        <Bar dataKey="value" radius={10}>
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={colors[index]} />
+          ))}
+        </Bar>
+      </BarChart>
+    </ResponsiveContainer>
+  );
 }
 
 export default ExpenseChart;

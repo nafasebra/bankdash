@@ -9,9 +9,9 @@ import {
   TransactionIcon,
 } from "@/assets/icons";
 import { linkEnum } from "../enums/link";
-import { menuLinkType } from "../types/link";
+import { MenuLinkType } from "../types/link";
 
-export const menuLinks: menuLinkType[] = [
+export const menuLinks: MenuLinkType[] = [
   {
     id: 1,
     title: linkEnum.Dashboard,

@@ -1,77 +1,28 @@
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { faker } from '@faker-js/faker';
 
-ChartJS.register(
-  Filler,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
-const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      display: false,
-      position: 'top' as const,
-    },
-    title: {
-      display: false,
-    },
-  },
-  scales: {
-    x: {
-      grid: {
-        border: {
-          dash: [2,4],
-        },  
-        color: 'rgba(52, 60, 106, 0.2)'
-      }
-    },
-    y: {
-      grid: {
-        border: {
-          dash: [2,4],
-        },  
-        color: 'rgba(52, 60, 106, 0.2)'
-      }
-    }
-  }
-};
-
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-
-const data = {
-  labels,
-  datasets: [
-    {
-      label: 'Dataset 1',
-      data: labels.map(() => faker.number.int({ min: 200, max: 500 })),
-      borderColor: 'rgb(45, 96, 255)',
-      backgroundColor: 'rgba(45, 96, 255, 0.1)',
-      lineTension: 0.4,
-      fill: true,
-    },
-  ],
-};
+const data = [
+  { month: 'January', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'February', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'March', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'April', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'May', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'June', value: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'July', value: faker.number.int({ min: 200, max: 500 }) },
+];
 
 function BalanceChart() {
-  return <Line height={120} options={options} data={data} />;
+  return (
+    <ResponsiveContainer width="100%" height={120}>
+      <AreaChart data={data}>
+        <CartesianGrid strokeDasharray="2 4" stroke="rgba(52, 60, 106, 0.2)" />
+        <XAxis dataKey="month" />
+        <YAxis />
+        <Tooltip />
+        <Area type="monotone" dataKey="value" stroke="rgb(45, 96, 255)" fill="rgba(45, 96, 255, 0.1)" />
+      </AreaChart>
+    </ResponsiveContainer>
+  );
 }
 
-export default BalanceChart
+export default BalanceChart;

@@ -1,65 +1,29 @@
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import {faker} from '@faker-js/faker'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { faker } from '@faker-js/faker';
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
-const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      display: false,
-      position: 'top' as const,
-    },
-    title: {
-      display: false,
-    },
-  },
-};
-
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-
-const data = {
-  labels,
-  datasets: [
-    {
-      label: 'Dataset 1',
-      data: labels.map(() => faker.number.int({ min: 200, max: 500 })),
-      backgroundColor: 'rgba(45, 96, 255, 1)',
-      borderWidth: 2,
-      borderRadius: 30,
-      barPercentage: 0.45,
-      categoryPercentage: 1
-    },
-    {
-      label: 'Dataset 2',
-      data: labels.map(() => faker.number.int({ min: 200, max: 500 })),
-      backgroundColor: 'rgba(22, 219, 204, 1)',
-      borderWidth: 2,
-      borderRadius: 30,
-      barPercentage: 0.45,
-      categoryPercentage: 1
-    },
-  ],
-};
+const data = [
+  { month: 'January', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'February', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'March', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'April', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'May', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'June', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+  { month: 'July', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+];
 
 function WeeklyChart() {
-  return <Bar height={150} options={options} data={data} />;
+  return (
+    <ResponsiveContainer width="100%" height={150}>
+      <BarChart data={data}>
+        <CartesianGrid strokeDasharray="2 4" stroke="rgba(52, 60, 106, 0.2)" />
+        <XAxis dataKey="month" />
+        <YAxis />
+        <Tooltip />
+        <Bar dataKey="value1" fill="rgba(45, 96, 255, 1)" radius={30} />
+        <Bar dataKey="value2" fill="rgba(22, 219, 204, 1)" radius={30} />
+      </BarChart>
+    </ResponsiveContainer>
+  );
 }
 
 export default WeeklyChart;
