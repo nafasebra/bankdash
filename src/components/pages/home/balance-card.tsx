@@ -1,4 +1,12 @@
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts';
 import { faker } from '@faker-js/faker';
 
 const data = [
@@ -19,7 +27,12 @@ function BalanceChart() {
         <XAxis dataKey="month" />
         <YAxis />
         <Tooltip />
-        <Area type="monotone" dataKey="value" stroke="rgb(45, 96, 255)" fill="rgba(45, 96, 255, 0.1)" />
+        <Area
+          type="monotone"
+          dataKey="value"
+          stroke="rgb(45, 96, 255)"
+          fill="rgba(45, 96, 255, 0.1)"
+        />
       </AreaChart>
     </ResponsiveContainer>
   );

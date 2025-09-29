@@ -13,6 +13,6 @@ export const theme = extendTheme({
     Input,
     Switch,
     Popover,
-    Card
-  }
+    Card,
+  },
 });

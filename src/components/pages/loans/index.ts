@@ -1,1 +1,1 @@
-export { default as LoanTable } from "./loan-table";
+export { default as LoanTable } from './loan-table';

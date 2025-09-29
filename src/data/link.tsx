@@ -7,57 +7,57 @@ import {
   ServicesIcon,
   SettingsIcon,
   TransactionIcon,
-} from "@/assets/icons";
-import { linkEnum } from "../enums/link";
-import { MenuLinkType } from "../types/link";
+} from '@/assets/icons';
+import { linkEnum } from '../enums/link';
+import { MenuLinkType } from '../types/link';
 
 export const menuLinks: MenuLinkType[] = [
   {
     id: 1,
     title: linkEnum.Dashboard,
-    link: "/",
+    link: '/',
     icon: <HomeIcon />,
   },
   {
     id: 2,
     title: linkEnum.Transactions,
-    link: "/transactions",
+    link: '/transactions',
     icon: <TransactionIcon />,
   },
   {
     id: 3,
     title: linkEnum.Accounts,
-    link: "/accounts",
+    link: '/accounts',
     icon: <AccountIcon />,
   },
   {
     id: 4,
     title: linkEnum.Investments,
-    link: "/investments",
+    link: '/investments',
     icon: <InvestmentsIcon />,
   },
   {
     id: 5,
     title: linkEnum.Credit,
-    link: "/cards",
+    link: '/cards',
     icon: <CreditcardIcon />,
   },
   {
     id: 6,
     title: linkEnum.Loans,
-    link: "/loans",
+    link: '/loans',
     icon: <LoansIcon />,
   },
   {
     id: 7,
     title: linkEnum.Services,
-    link: "/services",
+    link: '/services',
     icon: <ServicesIcon />,
   },
   {
     id: 8,
     title: linkEnum.Setting,
-    link: "/setting",
+    link: '/setting',
     icon: <SettingsIcon />,
   },
 ];

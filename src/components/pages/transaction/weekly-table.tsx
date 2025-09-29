@@ -5,27 +5,27 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
-} from "@chakra-ui/react";
-import TransactionTable from "./transaction-table";
+} from '@chakra-ui/react';
+import TransactionTable from './transaction-table';
 
 function WeeklyTabbar() {
   return (
     <Tabs position="relative" variant="unstyled">
       <TabList>
         <Tab
-          _selected={{ color: "primary.100" }}
+          _selected={{ color: 'primary.100' }}
           className="py-4 px-2 font-semibold text-primary-200"
         >
           All Transactions
         </Tab>
         <Tab
-          _selected={{ color: "primary.100" }}
+          _selected={{ color: 'primary.100' }}
           className="py-4 px-2 font-semibold text-primary-200"
         >
           Income
         </Tab>
         <Tab
-          _selected={{ color: "primary.100" }}
+          _selected={{ color: 'primary.100' }}
           className="py-4 px-2 font-semibold text-primary-200"
         >
           Expense

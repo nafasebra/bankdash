@@ -1,4 +1,4 @@
-import { CardIcon, CoinIcon, PaypalIcon } from "@/assets/icons";
+import { CardIcon, CoinIcon, PaypalIcon } from '@/assets/icons';
 
 function TransactionCard() {
   return (

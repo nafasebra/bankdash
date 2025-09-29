@@ -1,14 +1,14 @@
-import { linkEnum } from "@/enums/link";
-import Body from "@/components/layout/body";
-import CreditCard from "@/components/ui/card/credit-card";
+import { linkEnum } from '@/enums/link';
+import Body from '@/components/layout/body';
+import CreditCard from '@/components/ui/card/credit-card';
 import {
   SliderCard,
   TransactionCard,
   WeeklyChart,
   ExpenseChart,
   BalanceChart,
-} from "@/components/pages/home";
-import SectionWithTitle from "@/components/pages/section-with-title";
+} from '@/components/pages/home';
+import SectionWithTitle from '@/components/pages/section-with-title';
 
 function Home() {
   return (

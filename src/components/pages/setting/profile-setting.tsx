@@ -1,6 +1,6 @@
-import { FormControl, FormLabel, Input } from "@chakra-ui/react";
-import avatar from "@/assets/images/avatar.png";
-import { PencilIcon } from "@/assets/icons";
+import { FormControl, FormLabel, Input } from '@chakra-ui/react';
+import avatar from '@/assets/images/avatar.png';
+import { PencilIcon } from '@/assets/icons';
 
 function ProfileSetting() {
   return (
@@ -14,7 +14,10 @@ function ProfileSetting() {
               alt="avatar of username"
             />
           </div>
-          <button type="button" className="absolute bottom-3 right-3 w-10 h-10 bg-primary-100 text-white rounded-full flex items-center justify-center">
+          <button
+            type="button"
+            className="absolute bottom-3 right-3 w-10 h-10 bg-primary-100 text-white rounded-full flex items-center justify-center"
+          >
             <div className="w-6 h-6 flex items-center justify-center">
               <PencilIcon />
             </div>
@@ -41,10 +44,7 @@ function ProfileSetting() {
           </FormControl>
           <FormControl className="space-y-3">
             <FormLabel htmlFor="">Date of Birth</FormLabel>
-            <Input
-              placeholder="Select Date and Time"
-              type="datetime-local"
-            />
+            <Input placeholder="Select Date and Time" type="datetime-local" />
           </FormControl>
           <FormControl className="space-y-3">
             <FormLabel htmlFor="">Present Address</FormLabel>
@@ -61,7 +61,7 @@ function ProfileSetting() {
           <FormControl className="space-y-3">
             {/* lint stage */}
             {/* eol */}
-            
+
             <FormLabel htmlFor="">Postal Code</FormLabel>
             <Input placeholder="45962" />
           </FormControl>

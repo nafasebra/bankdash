@@ -1,11 +1,11 @@
-import CreditChart from "./credit-chart";
+import CreditChart from './credit-chart';
 
 function DebitCreditCard() {
   return (
     <>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="text-primary-400">
-          <span className="text-primary-200">$7,560</span> Debited &{" "}
+          <span className="text-primary-200">$7,560</span> Debited &{' '}
           <span className="text-primary-200">$5,420</span> Credited in this Week
         </p>
         <div className="flex items-center gap-5">

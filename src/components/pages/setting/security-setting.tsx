@@ -1,4 +1,4 @@
-import { FormControl, FormLabel, Input, Switch } from "@chakra-ui/react";
+import { FormControl, FormLabel, Input, Switch } from '@chakra-ui/react';
 
 function SecuritySetting() {
   return (

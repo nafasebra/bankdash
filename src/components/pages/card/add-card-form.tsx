@@ -1,4 +1,10 @@
-import { Button, FormControl, FormLabel, Input, InputGroup } from '@chakra-ui/react'
+import {
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  InputGroup,
+} from '@chakra-ui/react';
 import { ChangeEvent, useState } from 'react';
 
 function AddCardForm() {
@@ -16,8 +22,8 @@ function AddCardForm() {
   };
 
   return (
-    <form className='space-y-5'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+    <form className="space-y-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="space-y-3">
           <label htmlFor="">Card Type</label>
           <Input placeholder="Classic" />
@@ -42,11 +48,11 @@ function AddCardForm() {
           <Input placeholder="**** **** **** ****" type="datetime-local" />
         </div>
       </div>
-      <div className='flex flex-col w-full md:w-[150px]'>
+      <div className="flex flex-col w-full md:w-[150px]">
         <Button>Add card</Button>
       </div>
     </form>
-  )
+  );
 }
 
-export default AddCardForm
+export default AddCardForm;

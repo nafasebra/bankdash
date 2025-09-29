@@ -1,4 +1,4 @@
-import { defineStyleConfig } from "@chakra-ui/react";
+import { defineStyleConfig } from '@chakra-ui/react';
 
 export const Button = defineStyleConfig({
   baseStyle: {
@@ -25,8 +25,8 @@ export const Button = defineStyleConfig({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: '0.75rem'
-    }
+      gap: '0.75rem',
+    },
   },
-  defaultProps: {variant: 'solid'}
+  defaultProps: { variant: 'solid' },
 });

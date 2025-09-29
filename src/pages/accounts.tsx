@@ -1,19 +1,19 @@
-import { linkEnum } from "@/enums/link";
+import { linkEnum } from '@/enums/link';
 import {
   AccountIcon,
   BarIcon,
   Service2nIcon,
   Settings2Icon,
-} from "@/assets/icons";
-import Body from "@/components/layout/body";
-import IconCard from "@/components/ui/card/icon-card";
-import CreditCard from "@/components/ui/card/credit-card";
+} from '@/assets/icons';
+import Body from '@/components/layout/body';
+import IconCard from '@/components/ui/card/icon-card';
+import CreditCard from '@/components/ui/card/credit-card';
 import {
   LastTransactionTable,
   InvoicesSentTable,
   DebitCreditCard,
-} from "@/components/pages/account";
-import SectionWithTitle from "@/components/pages/section-with-title";
+} from '@/components/pages/account';
+import SectionWithTitle from '@/components/pages/section-with-title';
 
 function Accounts() {
   return (

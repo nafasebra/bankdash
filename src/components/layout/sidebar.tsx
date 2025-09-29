@@ -1,11 +1,13 @@
-import { Link, useLocation } from "react-router-dom";
-import { menuLinks } from "@/data/link";
-import { MenuLinkType } from "@/types/link";
+import { Link, useLocation } from 'react-router-dom';
+import { menuLinks } from '@/data/link';
+import { MenuLinkType } from '@/types/link';
 
 function Sidebar() {
   const locate = useLocation();
 
-  const currentMenu = menuLinks.find((item: MenuLinkType) => item.link === locate.pathname);
+  const currentMenu = menuLinks.find(
+    (item: MenuLinkType) => item.link === locate.pathname
+  );
 
   return (
     <div className="bg-white hidden md:flex flex-col gap-10 py-7 w-[300px] border-r border-light">
@@ -17,17 +19,15 @@ function Sidebar() {
           <li key={menu.id} className="relative">
             <div
               className={`${
-                menu.title === currentMenu?.title
-                  ? "block"
-                  : "hidden"
+                menu.title === currentMenu?.title ? 'block' : 'hidden'
               } absolute bg-primary-100 top-0 bottom-0 left-0 w-2 rounded-r-2xl h-full`}
             ></div>
             <Link
               to={menu.link}
               className={`flex items-center gap-6 py-3 px-6 relative ${
                 menu.title === currentMenu?.title
-                  ? "text-primary-100"
-                  : "text-primary-200/60"
+                  ? 'text-primary-100'
+                  : 'text-primary-200/60'
               } hover:text-primary-100 transition-all`}
             >
               <div className="w-5 h-5 flex items-center">{menu.icon}</div>

@@ -1,4 +1,13 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  Cell,
+} from 'recharts';
 import { faker } from '@faker-js/faker';
 
 const data = [
@@ -10,7 +19,14 @@ const data = [
   { month: 'Jan', value: faker.number.int({ min: 200, max: 500 }) },
 ];
 
-const colors = ['#EDF0F7', '#EDF0F7', '#EDF0F7', '#EDF0F7', '#16DBCC', '#EDF0F7'];
+const colors = [
+  '#EDF0F7',
+  '#EDF0F7',
+  '#EDF0F7',
+  '#EDF0F7',
+  '#16DBCC',
+  '#EDF0F7',
+];
 
 function ExpenseChart() {
   return (

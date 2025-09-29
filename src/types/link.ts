@@ -3,4 +3,4 @@ export interface MenuLinkType {
   title: string;
   link: string;
   icon: JSX.Element[] | JSX.Element;
-};
+}

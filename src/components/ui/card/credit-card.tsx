@@ -1,25 +1,25 @@
-import BankLogo from "@/assets/images/bank-logo.svg";
-import ChipCard from "@/assets/images/Chip_Card.png";
-import BankLogoBlack from "@/assets/images/bank-logo-black.svg";
-import ChipCardBlack from "@/assets/images/Chip_Card-black.png";
+import BankLogo from '@/assets/images/bank-logo.svg';
+import ChipCard from '@/assets/images/Chip_Card.png';
+import BankLogoBlack from '@/assets/images/bank-logo-black.svg';
+import ChipCardBlack from '@/assets/images/Chip_Card-black.png';
 
 interface CreditCardProps {
-  theme?: "blue" | "ocean" | "white";
+  theme?: 'blue' | 'ocean' | 'white';
 }
 
 function CreditCard(props: CreditCardProps) {
-  const { theme = "blue" } = props;
+  const { theme = 'blue' } = props;
 
   const renderTheme = () => {
     switch (theme) {
-      case "blue":
-        return "bg-primary-100 text-white";
-      case "ocean":
-        return "bg-gradient-to-tr from-primary-100 to-primary-300 text-white";
-      case "white":
-        return "bg-white text-primary-200";
+      case 'blue':
+        return 'bg-primary-100 text-white';
+      case 'ocean':
+        return 'bg-gradient-to-tr from-primary-100 to-primary-300 text-white';
+      case 'white':
+        return 'bg-white text-primary-200';
       default:
-        return "";
+        return '';
     }
   };
 
@@ -31,7 +31,7 @@ function CreditCard(props: CreditCardProps) {
             <p className="text-sm">Balance</p>
             <p className="text-2xl">$5,756</p>
           </div>
-          {theme === "white" ? (
+          {theme === 'white' ? (
             <img src={ChipCardBlack} className="w-[35px]" />
           ) : (
             <img src={ChipCard} className="w-[35px]" />
@@ -50,7 +50,7 @@ function CreditCard(props: CreditCardProps) {
       </div>
       <div className="bg-gradient-to-br from-white/15 to-transparent flex items-center justify-between px-6 py-4">
         <p className="font-semibold text-xl">3778 **** **** 1234</p>
-        {theme === "white" ? (
+        {theme === 'white' ? (
           <img src={BankLogoBlack} className="w-[50px]" />
         ) : (
           <img src={BankLogo} className="w-[50px]" />

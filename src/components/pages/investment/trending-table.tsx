@@ -82,7 +82,7 @@ function TrendingTable() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default TrendingTable
+export default TrendingTable;

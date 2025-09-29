@@ -1,8 +1,8 @@
-import { linkEnum } from "@/enums/link";
-import Body from "@/components/layout/body";
-import ProfileSetting from "@/components/pages/setting/profile-setting";
-import PreferenceSetting from "@/components/pages/setting/preference-setting";
-import SecuritySetting from "@/components/pages/setting/security-setting";
+import { linkEnum } from '@/enums/link';
+import Body from '@/components/layout/body';
+import ProfileSetting from '@/components/pages/setting/profile-setting';
+import PreferenceSetting from '@/components/pages/setting/preference-setting';
+import SecuritySetting from '@/components/pages/setting/security-setting';
 import {
   Button,
   Tab,
@@ -11,7 +11,7 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 
 function Setting() {
   return (
@@ -20,19 +20,19 @@ function Setting() {
         <Tabs position="relative" variant="unstyled">
           <TabList>
             <Tab
-              _selected={{ color: "primary.100" }}
+              _selected={{ color: 'primary.100' }}
               className="py-7 px-4 font-semibold text-primary-200"
             >
               Edit Profile
             </Tab>
             <Tab
-              _selected={{ color: "primary.100" }}
+              _selected={{ color: 'primary.100' }}
               className="py-7 px-4 font-semibold text-primary-200"
             >
               Preferences
             </Tab>
             <Tab
-              _selected={{ color: "primary.100" }}
+              _selected={{ color: 'primary.100' }}
               className="py-7 px-4 font-semibold text-primary-200"
             >
               Security

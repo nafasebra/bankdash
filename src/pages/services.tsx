@@ -1,9 +1,9 @@
-import { linkEnum } from "@/enums/link";
-import Body from "@/components/layout/body";
-import { BagIcon, LifeIcon, SafeIcon } from "@/assets/icons";
-import IconCard from "@/components/ui/card/icon-card";
-import SectionWithTitle from "@/components/pages/section-with-title";
-import { ServiceTable } from "@/components/pages/service";
+import { linkEnum } from '@/enums/link';
+import Body from '@/components/layout/body';
+import { BagIcon, LifeIcon, SafeIcon } from '@/assets/icons';
+import IconCard from '@/components/ui/card/icon-card';
+import SectionWithTitle from '@/components/pages/section-with-title';
+import { ServiceTable } from '@/components/pages/service';
 
 function Services() {
   return (

@@ -1,14 +1,50 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts';
 import { faker } from '@faker-js/faker';
 
 const data = [
-  { month: 'January', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
-  { month: 'February', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
-  { month: 'March', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
-  { month: 'April', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
-  { month: 'May', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
-  { month: 'June', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
-  { month: 'July', value1: faker.number.int({ min: 200, max: 500 }), value2: faker.number.int({ min: 200, max: 500 }) },
+  {
+    month: 'January',
+    value1: faker.number.int({ min: 200, max: 500 }),
+    value2: faker.number.int({ min: 200, max: 500 }),
+  },
+  {
+    month: 'February',
+    value1: faker.number.int({ min: 200, max: 500 }),
+    value2: faker.number.int({ min: 200, max: 500 }),
+  },
+  {
+    month: 'March',
+    value1: faker.number.int({ min: 200, max: 500 }),
+    value2: faker.number.int({ min: 200, max: 500 }),
+  },
+  {
+    month: 'April',
+    value1: faker.number.int({ min: 200, max: 500 }),
+    value2: faker.number.int({ min: 200, max: 500 }),
+  },
+  {
+    month: 'May',
+    value1: faker.number.int({ min: 200, max: 500 }),
+    value2: faker.number.int({ min: 200, max: 500 }),
+  },
+  {
+    month: 'June',
+    value1: faker.number.int({ min: 200, max: 500 }),
+    value2: faker.number.int({ min: 200, max: 500 }),
+  },
+  {
+    month: 'July',
+    value1: faker.number.int({ min: 200, max: 500 }),
+    value2: faker.number.int({ min: 200, max: 500 }),
+  },
 ];
 
 function WeeklyChart() {

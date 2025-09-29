@@ -1,13 +1,13 @@
-import { linkEnum } from "@/enums/link";
-import Body from "@/components/layout/body";
-import CreditCard from "@/components/ui/card/credit-card";
+import { linkEnum } from '@/enums/link';
+import Body from '@/components/layout/body';
+import CreditCard from '@/components/ui/card/credit-card';
 import {
   AddCardForm,
   CardSettingCard,
   CardListContainer,
-} from "@/components/pages/card"; 
-import { ExpenseChart } from "@/components/pages/home";
-import SectionWithTitle from "@/components/pages/section-with-title";
+} from '@/components/pages/card';
+import { ExpenseChart } from '@/components/pages/home';
+import SectionWithTitle from '@/components/pages/section-with-title';
 
 function Credit() {
   return (

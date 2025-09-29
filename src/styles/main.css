@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-primary: #2D60FF;
-  --color-primary-100: #2D60FF;
-  --color-primary-200: #343C6A;
-  --color-primary-300: #539BFF;
-  --color-primary-400: #718EBF;
-  
-  --color-yellow: #FEAA09;
-  
-  --color-light: #F5F7FA;
-  --color-light-100: #F5F7FA;
-  --color-light-200: #DFEAF2;
-  
-  --color-magenta: #FE5C73;
-  --color-cyan: #16DBCC;
+  --color-primary: #2d60ff;
+  --color-primary-100: #2d60ff;
+  --color-primary-200: #343c6a;
+  --color-primary-300: #539bff;
+  --color-primary-400: #718ebf;
+
+  --color-yellow: #feaa09;
+
+  --color-light: #f5f7fa;
+  --color-light-100: #f5f7fa;
+  --color-light-200: #dfeaf2;
+
+  --color-magenta: #fe5c73;
+  --color-cyan: #16dbcc;
 }
 
 :root {
@@ -34,49 +34,47 @@ body {
 }
 
 button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-   cursor: pointer;
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  cursor: pointer;
 }
-
 
 /* Hide default button of input num type in Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
- -webkit-appearance: none;
- margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
-input[type="number"] {
- -moz-appearance: textfield;
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 img {
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
   -webkit-user-drag: none;
   -moz-user-drag: none;
   -ms-user-drag: none;
   -o-user-drag: none;
 }
 
-
 button:disabled,
-input[type="submit"]:disabled,
-input[type="reset"]:disabled,
-input[type="button"]:disabled {
-   pointer-events: none;
-   opacity: 0.5;
+input[type='submit']:disabled,
+input[type='reset']:disabled,
+input[type='button']:disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .no-scrollbar {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .no-scrollbar::-webkit-scrollbar {
-   display: none;
+  display: none;
 }

@@ -1,8 +1,8 @@
-import { linkEnum } from "@/enums/link";
-import Body from "@/components/layout/body";
-import CreditCard from "@/components/ui/card/credit-card";
-import { ExpenseChart, WeeklyTabbar } from "@/components/pages/transaction";
-import SectionWithTitle from "@/components/pages/section-with-title";
+import { linkEnum } from '@/enums/link';
+import Body from '@/components/layout/body';
+import CreditCard from '@/components/ui/card/credit-card';
+import { ExpenseChart, WeeklyTabbar } from '@/components/pages/transaction';
+import SectionWithTitle from '@/components/pages/section-with-title';
 
 function Transactions() {
   return (
@@ -24,7 +24,10 @@ function Transactions() {
           <ExpenseChart />
         </SectionWithTitle>
       </div>
-      <SectionWithTitle title="WeeLast Transactionkly Activity" container={false}>
+      <SectionWithTitle
+        title="WeeLast Transactionkly Activity"
+        container={false}
+      >
         <WeeklyTabbar />
       </SectionWithTitle>
     </Body>

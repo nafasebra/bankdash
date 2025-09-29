@@ -1,4 +1,12 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts';
 import { faker } from '@faker-js/faker';
 
 const data = [
@@ -18,7 +26,12 @@ function RevenueChart() {
         <XAxis dataKey="year" />
         <YAxis />
         <Tooltip />
-        <Line type="monotone" dataKey="value" stroke="rgb(22, 219, 204)" strokeWidth={2} />
+        <Line
+          type="monotone"
+          dataKey="value"
+          stroke="rgb(22, 219, 204)"
+          strokeWidth={2}
+        />
       </LineChart>
     </ResponsiveContainer>
   );

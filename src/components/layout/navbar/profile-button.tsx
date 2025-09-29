@@ -6,8 +6,8 @@ import {
   PopoverHeader,
   PopoverTrigger,
   Portal,
-} from "@chakra-ui/react";
-import avatar from "@/assets/images/avatar.png";
+} from '@chakra-ui/react';
+import avatar from '@/assets/images/avatar.png';
 
 function ProfileButton() {
   return (
@@ -40,7 +40,10 @@ function ProfileButton() {
             </div>
           </PopoverHeader>
           <PopoverBody>
-            <button type="button" className="w-full py-3 px-4 text-magenta hover:bg-light">
+            <button
+              type="button"
+              className="w-full py-3 px-4 text-magenta hover:bg-light"
+            >
               Sign out
             </button>
           </PopoverBody>

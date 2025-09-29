@@ -1,4 +1,4 @@
-import { AppleIcon, CashOIcon, GoogleIcon, LockIcon } from '@/assets/icons'
+import { AppleIcon, CashOIcon, GoogleIcon, LockIcon } from '@/assets/icons';
 
 function CardSettingCard() {
   return (
@@ -59,7 +59,7 @@ function CardSettingCard() {
         </div>
       </li>
     </ul>
-  )
+  );
 }
 
-export default CardSettingCard
+export default CardSettingCard;

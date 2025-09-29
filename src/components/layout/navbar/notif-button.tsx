@@ -1,4 +1,4 @@
-import { BellIcon, CloseIcon } from "@/assets/icons";
+import { BellIcon, CloseIcon } from '@/assets/icons';
 import {
   Button,
   Popover,
@@ -9,17 +9,18 @@ import {
   PopoverHeader,
   PopoverTrigger,
   Portal,
-} from "@chakra-ui/react";
-import { useState } from "react";
-import { Notification } from "@/types/notification";
-import { notificationData } from "@/data/notification";
+} from '@chakra-ui/react';
+import { useState } from 'react';
+import { Notification } from '@/types/notification';
+import { notificationData } from '@/data/notification';
 
 function NotificationButton() {
-  const [notification, setNotification] = useState<Notification[]>(notificationData);
+  const [notification, setNotification] =
+    useState<Notification[]>(notificationData);
 
   const readNotification = (index: number) => {
     setNotification(() => {
-      return [...notification.filter((item) => item.id !== index)];
+      return [...notification.filter(item => item.id !== index)];
     });
   };
 
@@ -72,7 +73,12 @@ function NotificationButton() {
               </ul>
             </PopoverBody>
             <PopoverFooter>
-              <button className="w-full text-center text-primary" onClick={readAllNotification}>View all notification</button>
+              <button
+                className="w-full text-center text-primary"
+                onClick={readAllNotification}
+              >
+                View all notification
+              </button>
             </PopoverFooter>
           </PopoverContent>
         </Portal>

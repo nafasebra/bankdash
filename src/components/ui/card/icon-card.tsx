@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface CardProps {
   supTitle: string;
@@ -19,7 +19,9 @@ function IconCard(props: CardProps) {
       >
         <div className="w-6 h-6 flex items-center justify-center">{icon}</div>
       </div>
-      <div className={`w-[calc(100%-3.75rem)] flex ${reverse ? "flex-col" : "flex-col-reverse"}`}>
+      <div
+        className={`w-[calc(100%-3.75rem)] flex ${reverse ? 'flex-col' : 'flex-col-reverse'}`}
+      >
         <p className="text-sm text-primary-400 leading-none">{supTitle}</p>
         <p className="text-xl font-semibold text-black leading-none">{title}</p>
       </div>

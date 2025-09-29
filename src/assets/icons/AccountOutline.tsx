@@ -1,10 +1,6 @@
 function Icon() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 18 18"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
       <g clipPath="url(#clip0_152_911)">
         <path
           fill="currentColor"

@@ -1,13 +1,13 @@
-import SearchInput from "@/components/ui/input/search-input";
-import ProfileButton from "./profile-button";
-import NotifButton from "./notif-button";
-import { useLocation, useNavigate } from "react-router-dom";
-import { Button } from "@chakra-ui/react";
-import { SettingOIcon } from "@/assets/icons";
-import { MenuIcon } from "@/assets/icons";
-import MobileSidebar from "./mobile-sidebar";
-import { useState } from "react";
-import { menuLinks } from "@/data/link";
+import SearchInput from '@/components/ui/input/search-input';
+import ProfileButton from './profile-button';
+import NotifButton from './notif-button';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Button } from '@chakra-ui/react';
+import { SettingOIcon } from '@/assets/icons';
+import { MenuIcon } from '@/assets/icons';
+import MobileSidebar from './mobile-sidebar';
+import { useState } from 'react';
+import { menuLinks } from '@/data/link';
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -29,7 +29,7 @@ function Navbar() {
             <MenuIcon />
           </button>
           <p className="text-xl font-semibold text-primary-200">
-            {menuLinks.filter((item) => item.link === locate.pathname)[0].title}
+            {menuLinks.filter(item => item.link === locate.pathname)[0].title}
           </p>
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-4 mt-4">
@@ -38,7 +38,7 @@ function Navbar() {
                 handleSubmit={handleSubmit}
               />
               <div className="flex">
-                <Button variant="light" onClick={() => navigate("/settings")}>
+                <Button variant="light" onClick={() => navigate('/settings')}>
                   <SettingOIcon />
                 </Button>
               </div>
@@ -56,6 +56,6 @@ function Navbar() {
   );
 }
 
-Navbar.displayName = "Navbar";
+Navbar.displayName = 'Navbar';
 
 export default Navbar;

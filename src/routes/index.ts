@@ -1,61 +1,61 @@
-import { 
-  // createBrowserRouter, 
-  createHashRouter 
-} from "react-router-dom";
+import {
+  // createBrowserRouter,
+  createHashRouter,
+} from 'react-router-dom';
 
 const router = createHashRouter(
   [
     {
-      path: "/",
+      path: '/',
       lazy: async () => ({
-        Component: (await import("@/pages/home")).default,
+        Component: (await import('@/pages/home')).default,
       }),
     },
     {
-      path: "/transactions",
+      path: '/transactions',
       lazy: async () => ({
-        Component: (await import("@/pages/transactions")).default,
+        Component: (await import('@/pages/transactions')).default,
       }),
     },
     {
-      path: "/accounts",
+      path: '/accounts',
       lazy: async () => ({
-        Component: (await import("@/pages/accounts")).default,
+        Component: (await import('@/pages/accounts')).default,
       }),
     },
     {
-      path: "/investments",
+      path: '/investments',
       lazy: async () => ({
-        Component: (await import("@/pages/investment")).default,
+        Component: (await import('@/pages/investment')).default,
       }),
     },
     {
-      path: "/cards",
+      path: '/cards',
       lazy: async () => ({
-        Component: (await import("@/pages/credit")).default,
+        Component: (await import('@/pages/credit')).default,
       }),
     },
     {
-      path: "/loans",
+      path: '/loans',
       lazy: async () => ({
-        Component: (await import("@/pages/loans")).default,
+        Component: (await import('@/pages/loans')).default,
       }),
     },
     {
-      path: "/services",
+      path: '/services',
       lazy: async () => ({
-        Component: (await import("@/pages/services")).default,
+        Component: (await import('@/pages/services')).default,
       }),
     },
     {
-      path: "/setting",
+      path: '/setting',
       lazy: async () => ({
-        Component: (await import("@/pages/setting")).default,
+        Component: (await import('@/pages/setting')).default,
       }),
     },
   ],
   {
-    basename: "/",
+    basename: '/',
   }
 );
 
